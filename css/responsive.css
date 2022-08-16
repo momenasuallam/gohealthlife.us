@@ -473,3 +473,52 @@ h1, h2, h3, h4, h5 {
 }
 
 }
+.mblhead1{
+  display: none;
+}
+.imgmbl1{
+display: none;
+}
+@media(max-width:600px){
+  .txtheaddek1{
+    display: none;
+  }
+  .imgdesk1{
+    display: none;
+  }
+  .imgmbl1{
+    display: block;
+  }
+  .mblhead1{
+display: block;
+font-size: 18px;
+    padding: 15px 15px 0;
+  }
+  .section {
+    padding: 15px 0;
+}
+p{
+  margin-bottom: 10px;
+}
+.imgmaxwid2 {
+  max-width: 90% !important;
+}
+.bulllet_ano li{
+  margin-bottom: 10px;
+}
+img{
+  margin-bottom: 10px;
+}
+.resmarb0{
+  margin-bottom: 0px !important;
+}
+}
+
+@media(min-width:1300px){
+  .carousel-item img{
+    width: 85%;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+}
