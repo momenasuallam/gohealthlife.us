@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<!-- saved from url=(0234)https://server309.web-hosting.com:2083/cpsess4637963423/frontend/paper_lantern/filemanager/editit.html?file=main.css&fileop=&dir=%2Fhome%2Fwlosfcde%2Fgohealthlife.us%2Fcss&dirop=&charset=&file_charset=_DETECT_&baseurl=&basedir=&edit=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>main.css - cPanel File Manager v3</title>
+        
+
+        <link rel="stylesheet" type="text/css" href="./main.css - cPanel File Manager v3_files/bootstrap.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="./main.css - cPanel File Manager v3_files/open_sans.min.css">
+        <link rel="stylesheet" type="text/css" href="./main.css - cPanel File Manager v3_files/all.min.css">
+        <link rel="stylesheet" type="text/css" href="./main.css - cPanel File Manager v3_files/tree_styles2_optimized.css">
+
+        <script type="text/javascript" src="./main.css - cPanel File Manager v3_files/utilities_container.js"></script>
+        <script type="text/javascript" src="./main.css - cPanel File Manager v3_files/cpanel-all-min.js"></script>
+        <script type="text/javascript" src="./main.css - cPanel File Manager v3_files/filemanager_editors_optimized.js"></script>
+
+        
+<link rel="stylesheet" type="text/css" href="./main.css - cPanel File Manager v3_files/ajaxapp-min.css">
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/cPanel_magic_revision_1623854073/cjt/css/ajaxapp_ie6.css" />
+<![endif]-->
+
+
+        <style type="text/css">
+            html, body, #maintbl {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background: none !important;
+            }
+
+            form { margin: 0 }
+
+            #maintbl, #maintbl tr, #maintbl td {
+                margin:0;
+                padding:0;
+                border-collapse: collapse;
+                border: none;
+            }
+
+            .cjt_progress_overlay .bd {
+                background: transparent;
+            }
+
+            /* Suppress inherited styles from global style sheets. */
+            .yui-panel .hd,
+            .yui-panel .bd,
+            .yui-panel .ft {
+                background-image: none;
+                font-size: 100%;
+
+            }
+            .yui-panel .ft {
+                background-color: #CCCCCC;
+            }
+
+            /* overrides from tree_styles2_optimized.css */
+            p {
+                line-height: normal;
+            }
+            .header {
+                background: #333333;
+                color: #FFFFFF;
+                padding: 5px;
+            }
+            .button-group .default {
+                background: none !important;
+                padding: 0;
+            }
+
+            .action-buttons {
+                text-align: right;
+            }
+
+            .editor-area {
+                position: absolute !important;
+                top: 94px;
+                right: 0;
+                left: 0;
+                bottom: 20px;
+                border: 1px solid #CCCCCC;
+            }
+
+            .editor-toolbar {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .editor-toolbar .fa-terminal {
+                font-size: inherit;
+            }
+
+            .btn-group-ddl {
+                padding: 1px;
+            }
+
+            .help-link {
+                padding: 14px;
+                display: block;
+            }
+
+            @media (max-width: 503px) {
+                .editor-area {
+                    top: 245px;
+                }
+                .action-buttons {
+                    text-align: left;
+                }
+            }
+
+            @media (min-width: 504px) and (max-width: 768px) {
+                .editor-area {
+                    top: 200px;
+                }
+            }
+
+            @media (min-width: 769px) and (max-width: 1074px) {
+                .editor-area {
+                    top: 130px;
+                }
+            }
+        </style>
+
+        <!--[if IE]>
+        <style type="text/css">
+            #legacy_codewindow {
+                width: 99.5%;
+            }
+        </style>
+        <![endif]-->
+
+    <style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}[ace_nocontext=true] {transform: none!important;filter: none!important;perspective: none!important;clip-path: none!important;mask : none!important;contain: none!important;perspective: none!important;mix-blend-mode: initial!important;z-index: auto;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {transition: opacity 0.18s;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;box-sizing: border-box;}.ace_line .ace_fold {box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_inline_button {border: 1px solid lightgray;display: inline-block;margin: -1px 8px;padding: 0 5px;pointer-events: auto;cursor: pointer;}.ace_inline_button:hover {border-color: gray;background: rgba(200,200,200,0.2);display: inline-block;pointer-events: auto;}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><script src="./main.css - cPanel File Manager v3_files/mode-css.js"></script><script src="./main.css - cPanel File Manager v3_files/theme-chrome.js"></script><style id="ace-chrome">.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-chrome */</style></head>
+    <body class="nomargins yui-skin-sam" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1073.0" cz-shortcut-listen="true">
+        <form action="javascript:void(0)" name="sform" onsubmit="loadfdata(&#39;sform_submit&#39;); return false;" class="form-inline">
+            <table border="0" id="maintbl">
+                <tbody><tr class="header">
+                    <td style="padding: 5px">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8">
+                                <label style="font-weight: 900; font-size:13px;">
+                                    Editing:
+                                    <input id="path" name="path" value="/home/wlosfcde/gohealthlife.us/css/main.css" class="form-control">
+                                </label>
+                                <label>Encoding:
+                                    <select id="charset" name="charset" class="form-control">
+                                    
+                                        
+                                            <option value="ansi_x3.110-1983">
+                                                ansi_x3.110-1983
+                                            </option>
+                                        
+                                            <option value="ansi_x3.4-1968">
+                                                ansi_x3.4-1968
+                                            </option>
+                                        
+                                            <option value="armscii-8">
+                                                armscii-8
+                                            </option>
+                                        
+                                            <option value="asmo_449">
+                                                asmo_449
+                                            </option>
+                                        
+                                            <option value="big5">
+                                                big5
+                                            </option>
+                                        
+                                            <option value="big5-hkscs">
+                                                big5-hkscs
+                                            </option>
+                                        
+                                            <option value="brf">
+                                                brf
+                                            </option>
+                                        
+                                            <option value="bs_4730">
+                                                bs_4730
+                                            </option>
+                                        
+                                            <option value="bs_viewdata">
+                                                bs_viewdata
+                                            </option>
+                                        
+                                            <option value="cp10007">
+                                                cp10007
+                                            </option>
+                                        
+                                            <option value="cp1125">
+                                                cp1125
+                                            </option>
+                                        
+                                            <option value="cp1250">
+                                                cp1250
+                                            </option>
+                                        
+                                            <option value="cp1253">
+                                                cp1253
+                                            </option>
+                                        
+                                            <option value="cp1254">
+                                                cp1254
+                                            </option>
+                                        
+                                            <option value="cp1255">
+                                                cp1255
+                                            </option>
+                                        
+                                            <option value="cp1256">
+                                                cp1256
+                                            </option>
+                                        
+                                            <option value="cp1257">
+                                                cp1257
+                                            </option>
+                                        
+                                            <option value="cp1258">
+                                                cp1258
+                                            </option>
+                                        
+                                            <option value="cp737">
+                                                cp737
+                                            </option>
+                                        
+                                            <option value="cp775">
+                                                cp775
+                                            </option>
+                                        
+                                            <option value="csa_z243.4-1985-1">
+                                                csa_z243.4-1985-1
+                                            </option>
+                                        
+                                            <option value="csa_z243.4-1985-2">
+                                                csa_z243.4-1985-2
+                                            </option>
+                                        
+                                            <option value="csa_z243.4-1985-gr">
+                                                csa_z243.4-1985-gr
+                                            </option>
+                                        
+                                            <option value="csn_369103">
+                                                csn_369103
+                                            </option>
+                                        
+                                            <option value="cwi">
+                                                cwi
+                                            </option>
+                                        
+                                            <option value="dec-mcs">
+                                                dec-mcs
+                                            </option>
+                                        
+                                            <option value="din_66003">
+                                                din_66003
+                                            </option>
+                                        
+                                            <option value="ds_2089">
+                                                ds_2089
+                                            </option>
+                                        
+                                            <option value="ebcdic-at-de">
+                                                ebcdic-at-de
+                                            </option>
+                                        
+                                            <option value="ebcdic-at-de-a">
+                                                ebcdic-at-de-a
+                                            </option>
+                                        
+                                            <option value="ebcdic-ca-fr">
+                                                ebcdic-ca-fr
+                                            </option>
+                                        
+                                            <option value="ebcdic-dk-no">
+                                                ebcdic-dk-no
+                                            </option>
+                                        
+                                            <option value="ebcdic-dk-no-a">
+                                                ebcdic-dk-no-a
+                                            </option>
+                                        
+                                            <option value="ebcdic-es">
+                                                ebcdic-es
+                                            </option>
+                                        
+                                            <option value="ebcdic-es-a">
+                                                ebcdic-es-a
+                                            </option>
+                                        
+                                            <option value="ebcdic-es-s">
+                                                ebcdic-es-s
+                                            </option>
+                                        
+                                            <option value="ebcdic-fi-se">
+                                                ebcdic-fi-se
+                                            </option>
+                                        
+                                            <option value="ebcdic-fi-se-a">
+                                                ebcdic-fi-se-a
+                                            </option>
+                                        
+                                            <option value="ebcdic-fr">
+                                                ebcdic-fr
+                                            </option>
+                                        
+                                            <option value="ebcdic-is-friss">
+                                                ebcdic-is-friss
+                                            </option>
+                                        
+                                            <option value="ebcdic-it">
+                                                ebcdic-it
+                                            </option>
+                                        
+                                            <option value="ebcdic-pt">
+                                                ebcdic-pt
+                                            </option>
+                                        
+                                            <option value="ebcdic-uk">
+                                                ebcdic-uk
+                                            </option>
+                                        
+                                            <option value="ebcdic-us">
+                                                ebcdic-us
+                                            </option>
+                                        
+                                            <option value="ecma-cyrillic">
+                                                ecma-cyrillic
+                                            </option>
+                                        
+                                            <option value="es">
+                                                es
+                                            </option>
+                                        
+                                            <option value="es2">
+                                                es2
+                                            </option>
+                                        
+                                            <option value="euc-jisx0213">
+                                                euc-jisx0213
+                                            </option>
+                                        
+                                            <option value="euc-jp">
+                                                euc-jp
+                                            </option>
+                                        
+                                            <option value="euc-jp-ms">
+                                                euc-jp-ms
+                                            </option>
+                                        
+                                            <option value="euc-kr">
+                                                euc-kr
+                                            </option>
+                                        
+                                            <option value="euc-tw">
+                                                euc-tw
+                                            </option>
+                                        
+                                            <option value="gb18030">
+                                                gb18030
+                                            </option>
+                                        
+                                            <option value="gb2312">
+                                                gb2312
+                                            </option>
+                                        
+                                            <option value="gb_1988-80">
+                                                gb_1988-80
+                                            </option>
+                                        
+                                            <option value="gbk">
+                                                gbk
+                                            </option>
+                                        
+                                            <option value="georgian-academy">
+                                                georgian-academy
+                                            </option>
+                                        
+                                            <option value="georgian-ps">
+                                                georgian-ps
+                                            </option>
+                                        
+                                            <option value="gost_19768-74">
+                                                gost_19768-74
+                                            </option>
+                                        
+                                            <option value="greek-ccitt">
+                                                greek-ccitt
+                                            </option>
+                                        
+                                            <option value="greek7">
+                                                greek7
+                                            </option>
+                                        
+                                            <option value="greek7-old">
+                                                greek7-old
+                                            </option>
+                                        
+                                            <option value="gsm03.38">
+                                                gsm03.38
+                                            </option>
+                                        
+                                            <option value="hp-greek8">
+                                                hp-greek8
+                                            </option>
+                                        
+                                            <option value="hp-roman8">
+                                                hp-roman8
+                                            </option>
+                                        
+                                            <option value="hp-roman9">
+                                                hp-roman9
+                                            </option>
+                                        
+                                            <option value="hp-thai8">
+                                                hp-thai8
+                                            </option>
+                                        
+                                            <option value="hp-turkish8">
+                                                hp-turkish8
+                                            </option>
+                                        
+                                            <option value="hz-gb-2312">
+                                                hz-gb-2312
+                                            </option>
+                                        
+                                            <option value="ibm037">
+                                                ibm037
+                                            </option>
+                                        
+                                            <option value="ibm038">
+                                                ibm038
+                                            </option>
+                                        
+                                            <option value="ibm1004">
+                                                ibm1004
+                                            </option>
+                                        
+                                            <option value="ibm1026">
+                                                ibm1026
+                                            </option>
+                                        
+                                            <option value="ibm1047">
+                                                ibm1047
+                                            </option>
+                                        
+                                            <option value="ibm1124">
+                                                ibm1124
+                                            </option>
+                                        
+                                            <option value="ibm1129">
+                                                ibm1129
+                                            </option>
+                                        
+                                            <option value="ibm1132">
+                                                ibm1132
+                                            </option>
+                                        
+                                            <option value="ibm1133">
+                                                ibm1133
+                                            </option>
+                                        
+                                            <option value="ibm1160">
+                                                ibm1160
+                                            </option>
+                                        
+                                            <option value="ibm1161">
+                                                ibm1161
+                                            </option>
+                                        
+                                            <option value="ibm1162">
+                                                ibm1162
+                                            </option>
+                                        
+                                            <option value="ibm1163">
+                                                ibm1163
+                                            </option>
+                                        
+                                            <option value="ibm1164">
+                                                ibm1164
+                                            </option>
+                                        
+                                            <option value="ibm256">
+                                                ibm256
+                                            </option>
+                                        
+                                            <option value="ibm273">
+                                                ibm273
+                                            </option>
+                                        
+                                            <option value="ibm274">
+                                                ibm274
+                                            </option>
+                                        
+                                            <option value="ibm275">
+                                                ibm275
+                                            </option>
+                                        
+                                            <option value="ibm277">
+                                                ibm277
+                                            </option>
+                                        
+                                            <option value="ibm278">
+                                                ibm278
+                                            </option>
+                                        
+                                            <option value="ibm280">
+                                                ibm280
+                                            </option>
+                                        
+                                            <option value="ibm281">
+                                                ibm281
+                                            </option>
+                                        
+                                            <option value="ibm284">
+                                                ibm284
+                                            </option>
+                                        
+                                            <option value="ibm285">
+                                                ibm285
+                                            </option>
+                                        
+                                            <option value="ibm290">
+                                                ibm290
+                                            </option>
+                                        
+                                            <option value="ibm297">
+                                                ibm297
+                                            </option>
+                                        
+                                            <option value="ibm420">
+                                                ibm420
+                                            </option>
+                                        
+                                            <option value="ibm423">
+                                                ibm423
+                                            </option>
+                                        
+                                            <option value="ibm424">
+                                                ibm424
+                                            </option>
+                                        
+                                            <option value="ibm437">
+                                                ibm437
+                                            </option>
+                                        
+                                            <option value="ibm500">
+                                                ibm500
+                                            </option>
+                                        
+                                            <option value="ibm850">
+                                                ibm850
+                                            </option>
+                                        
+                                            <option value="ibm851">
+                                                ibm851
+                                            </option>
+                                        
+                                            <option value="ibm852">
+                                                ibm852
+                                            </option>
+                                        
+                                            <option value="ibm855">
+                                                ibm855
+                                            </option>
+                                        
+                                            <option value="ibm856">
+                                                ibm856
+                                            </option>
+                                        
+                                            <option value="ibm857">
+                                                ibm857
+                                            </option>
+                                        
+                                            <option value="ibm860">
+                                                ibm860
+                                            </option>
+                                        
+                                            <option value="ibm861">
+                                                ibm861
+                                            </option>
+                                        
+                                            <option value="ibm862">
+                                                ibm862
+                                            </option>
+                                        
+                                            <option value="ibm863">
+                                                ibm863
+                                            </option>
+                                        
+                                            <option value="ibm864">
+                                                ibm864
+                                            </option>
+                                        
+                                            <option value="ibm865">
+                                                ibm865
+                                            </option>
+                                        
+                                            <option value="ibm866">
+                                                ibm866
+                                            </option>
+                                        
+                                            <option value="ibm866nav">
+                                                ibm866nav
+                                            </option>
+                                        
+                                            <option value="ibm868">
+                                                ibm868
+                                            </option>
+                                        
+                                            <option value="ibm869">
+                                                ibm869
+                                            </option>
+                                        
+                                            <option value="ibm870">
+                                                ibm870
+                                            </option>
+                                        
+                                            <option value="ibm871">
+                                                ibm871
+                                            </option>
+                                        
+                                            <option value="ibm874">
+                                                ibm874
+                                            </option>
+                                        
+                                            <option value="ibm875">
+                                                ibm875
+                                            </option>
+                                        
+                                            <option value="ibm880">
+                                                ibm880
+                                            </option>
+                                        
+                                            <option value="ibm891">
+                                                ibm891
+                                            </option>
+                                        
+                                            <option value="ibm903">
+                                                ibm903
+                                            </option>
+                                        
+                                            <option value="ibm904">
+                                                ibm904
+                                            </option>
+                                        
+                                            <option value="ibm905">
+                                                ibm905
+                                            </option>
+                                        
+                                            <option value="ibm918">
+                                                ibm918
+                                            </option>
+                                        
+                                            <option value="ibm922">
+                                                ibm922
+                                            </option>
+                                        
+                                            <option value="iec_p27-1">
+                                                iec_p27-1
+                                            </option>
+                                        
+                                            <option value="inis">
+                                                inis
+                                            </option>
+                                        
+                                            <option value="inis-8">
+                                                inis-8
+                                            </option>
+                                        
+                                            <option value="inis-cyrillic">
+                                                inis-cyrillic
+                                            </option>
+                                        
+                                            <option value="invariant">
+                                                invariant
+                                            </option>
+                                        
+                                            <option value="isiri-3342">
+                                                isiri-3342
+                                            </option>
+                                        
+                                            <option value="iso-8859-1">
+                                                iso-8859-1
+                                            </option>
+                                        
+                                            <option value="iso-8859-10">
+                                                iso-8859-10
+                                            </option>
+                                        
+                                            <option value="iso-8859-11">
+                                                iso-8859-11
+                                            </option>
+                                        
+                                            <option value="iso-8859-13">
+                                                iso-8859-13
+                                            </option>
+                                        
+                                            <option value="iso-8859-14">
+                                                iso-8859-14
+                                            </option>
+                                        
+                                            <option value="iso-8859-15">
+                                                iso-8859-15
+                                            </option>
+                                        
+                                            <option value="iso-8859-16">
+                                                iso-8859-16
+                                            </option>
+                                        
+                                            <option value="iso-8859-2">
+                                                iso-8859-2
+                                            </option>
+                                        
+                                            <option value="iso-8859-3">
+                                                iso-8859-3
+                                            </option>
+                                        
+                                            <option value="iso-8859-4">
+                                                iso-8859-4
+                                            </option>
+                                        
+                                            <option value="iso-8859-5">
+                                                iso-8859-5
+                                            </option>
+                                        
+                                            <option value="iso-8859-6">
+                                                iso-8859-6
+                                            </option>
+                                        
+                                            <option value="iso-8859-7">
+                                                iso-8859-7
+                                            </option>
+                                        
+                                            <option value="iso-8859-8">
+                                                iso-8859-8
+                                            </option>
+                                        
+                                            <option value="iso-8859-9">
+                                                iso-8859-9
+                                            </option>
+                                        
+                                            <option value="iso-8859-9e">
+                                                iso-8859-9e
+                                            </option>
+                                        
+                                            <option value="iso-ir-197">
+                                                iso-ir-197
+                                            </option>
+                                        
+                                            <option value="iso-ir-209">
+                                                iso-ir-209
+                                            </option>
+                                        
+                                            <option value="iso-ir-90">
+                                                iso-ir-90
+                                            </option>
+                                        
+                                            <option value="iso_10367-box">
+                                                iso_10367-box
+                                            </option>
+                                        
+                                            <option value="iso_10646">
+                                                iso_10646
+                                            </option>
+                                        
+                                            <option value="iso_11548-1">
+                                                iso_11548-1
+                                            </option>
+                                        
+                                            <option value="iso_2033-1983">
+                                                iso_2033-1983
+                                            </option>
+                                        
+                                            <option value="iso_5427">
+                                                iso_5427
+                                            </option>
+                                        
+                                            <option value="iso_5427-ext">
+                                                iso_5427-ext
+                                            </option>
+                                        
+                                            <option value="iso_5428">
+                                                iso_5428
+                                            </option>
+                                        
+                                            <option value="iso_646.basic">
+                                                iso_646.basic
+                                            </option>
+                                        
+                                            <option value="iso_646.irv">
+                                                iso_646.irv
+                                            </option>
+                                        
+                                            <option value="iso_6937">
+                                                iso_6937
+                                            </option>
+                                        
+                                            <option value="iso_6937-2-25">
+                                                iso_6937-2-25
+                                            </option>
+                                        
+                                            <option value="iso_6937-2-add">
+                                                iso_6937-2-add
+                                            </option>
+                                        
+                                            <option value="iso_8859-1,gl">
+                                                iso_8859-1,gl
+                                            </option>
+                                        
+                                            <option value="iso_8859-supp">
+                                                iso_8859-supp
+                                            </option>
+                                        
+                                            <option value="it">
+                                                it
+                                            </option>
+                                        
+                                            <option value="jis_c6220-1969-jp">
+                                                jis_c6220-1969-jp
+                                            </option>
+                                        
+                                            <option value="jis_c6220-1969-ro">
+                                                jis_c6220-1969-ro
+                                            </option>
+                                        
+                                            <option value="jis_c6229-1984-a">
+                                                jis_c6229-1984-a
+                                            </option>
+                                        
+                                            <option value="jis_c6229-1984-b">
+                                                jis_c6229-1984-b
+                                            </option>
+                                        
+                                            <option value="jis_c6229-1984-b-add">
+                                                jis_c6229-1984-b-add
+                                            </option>
+                                        
+                                            <option value="jis_c6229-1984-hand">
+                                                jis_c6229-1984-hand
+                                            </option>
+                                        
+                                            <option value="jis_c6229-1984-hand-add">
+                                                jis_c6229-1984-hand-add
+                                            </option>
+                                        
+                                            <option value="jis_c6229-1984-kana">
+                                                jis_c6229-1984-kana
+                                            </option>
+                                        
+                                            <option value="jis_x0201">
+                                                jis_x0201
+                                            </option>
+                                        
+                                            <option value="johab">
+                                                johab
+                                            </option>
+                                        
+                                            <option value="jus_i.b1.002">
+                                                jus_i.b1.002
+                                            </option>
+                                        
+                                            <option value="jus_i.b1.003-mac">
+                                                jus_i.b1.003-mac
+                                            </option>
+                                        
+                                            <option value="jus_i.b1.003-serb">
+                                                jus_i.b1.003-serb
+                                            </option>
+                                        
+                                            <option value="koi-8">
+                                                koi-8
+                                            </option>
+                                        
+                                            <option value="koi8-r">
+                                                koi8-r
+                                            </option>
+                                        
+                                            <option value="koi8-ru">
+                                                koi8-ru
+                                            </option>
+                                        
+                                            <option value="koi8-t">
+                                                koi8-t
+                                            </option>
+                                        
+                                            <option value="koi8-u">
+                                                koi8-u
+                                            </option>
+                                        
+                                            <option value="ks_c_5601-1987">
+                                                ks_c_5601-1987
+                                            </option>
+                                        
+                                            <option value="ksc5636">
+                                                ksc5636
+                                            </option>
+                                        
+                                            <option value="latin-greek">
+                                                latin-greek
+                                            </option>
+                                        
+                                            <option value="latin-greek-1">
+                                                latin-greek-1
+                                            </option>
+                                        
+                                            <option value="mac-centraleurope">
+                                                mac-centraleurope
+                                            </option>
+                                        
+                                            <option value="mac-cyrillic">
+                                                mac-cyrillic
+                                            </option>
+                                        
+                                            <option value="mac-is">
+                                                mac-is
+                                            </option>
+                                        
+                                            <option value="mac-sami">
+                                                mac-sami
+                                            </option>
+                                        
+                                            <option value="mac-uk">
+                                                mac-uk
+                                            </option>
+                                        
+                                            <option value="macintosh">
+                                                macintosh
+                                            </option>
+                                        
+                                            <option value="mik">
+                                                mik
+                                            </option>
+                                        
+                                            <option value="msz_7795.3">
+                                                msz_7795.3
+                                            </option>
+                                        
+                                            <option value="nats-dano">
+                                                nats-dano
+                                            </option>
+                                        
+                                            <option value="nats-dano-add">
+                                                nats-dano-add
+                                            </option>
+                                        
+                                            <option value="nats-sefi">
+                                                nats-sefi
+                                            </option>
+                                        
+                                            <option value="nats-sefi-add">
+                                                nats-sefi-add
+                                            </option>
+                                        
+                                            <option value="nc_nc00-10">
+                                                nc_nc00-10
+                                            </option>
+                                        
+                                            <option value="nextstep">
+                                                nextstep
+                                            </option>
+                                        
+                                            <option value="nf_z_62-010">
+                                                nf_z_62-010
+                                            </option>
+                                        
+                                            <option value="nf_z_62-010_1973">
+                                                nf_z_62-010_1973
+                                            </option>
+                                        
+                                            <option value="ns_4551-1">
+                                                ns_4551-1
+                                            </option>
+                                        
+                                            <option value="ns_4551-2">
+                                                ns_4551-2
+                                            </option>
+                                        
+                                            <option value="pt">
+                                                pt
+                                            </option>
+                                        
+                                            <option value="pt154">
+                                                pt154
+                                            </option>
+                                        
+                                            <option value="pt2">
+                                                pt2
+                                            </option>
+                                        
+                                            <option value="rk1048">
+                                                rk1048
+                                            </option>
+                                        
+                                            <option value="sami">
+                                                sami
+                                            </option>
+                                        
+                                            <option value="sami-ws2">
+                                                sami-ws2
+                                            </option>
+                                        
+                                            <option value="sen_850200_b">
+                                                sen_850200_b
+                                            </option>
+                                        
+                                            <option value="sen_850200_c">
+                                                sen_850200_c
+                                            </option>
+                                        
+                                            <option value="shift_jis">
+                                                shift_jis
+                                            </option>
+                                        
+                                            <option value="shift_jisx0213">
+                                                shift_jisx0213
+                                            </option>
+                                        
+                                            <option value="t.101-g2">
+                                                t.101-g2
+                                            </option>
+                                        
+                                            <option value="t.61-7bit">
+                                                t.61-7bit
+                                            </option>
+                                        
+                                            <option value="t.61-8bit">
+                                                t.61-8bit
+                                            </option>
+                                        
+                                            <option value="tcvn5712-1">
+                                                tcvn5712-1
+                                            </option>
+                                        
+                                            <option value="tis-620">
+                                                tis-620
+                                            </option>
+                                        
+                                            <option value="tscii">
+                                                tscii
+                                            </option>
+                                        
+                                            <option value="us-ascii">
+                                                us-ascii
+                                            </option>
+                                        
+                                            <option value="utf-7">
+                                                utf-7
+                                            </option>
+                                        
+                                            <option value="utf-8" selected="">
+                                                utf-8
+                                            </option>
+                                        
+                                            <option value="videotex-suppl">
+                                                videotex-suppl
+                                            </option>
+                                        
+                                            <option value="viscii">
+                                                viscii
+                                            </option>
+                                        
+                                            <option value="windows-1251">
+                                                windows-1251
+                                            </option>
+                                        
+                                            <option value="windows-1252">
+                                                windows-1252
+                                            </option>
+                                        
+                                            <option value="windows-31j">
+                                                windows-31j
+                                            </option>
+                                        
+                                    
+                                    </select>
+                                </label>
+                                <input type="button" onclick="loadfile(this);" class="btn btn-default" value="Re-open" id="btnReOpen">
+                            </div>
+                            <div class="col-xs-12 col-md-4 action-buttons">
+                                <button type="button" class="btn btn-default" id="switch_editor_control" onclick="try {toggle_EditArea(this)} catch(e) {} return false" title="Switch to legacy editor.">Use legacy editor</button>
+                                &nbsp;
+                                <button type="submit" id="sform_submit" class="btn btn-primary" style="font-weight:bold">
+                                    Save Changes
+                                </button>
+                                <input type="button" onclick="confirm_close(this);" class="btn btn-default" value="Close" id="btnClose">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="show-ace-editor">
+                    <td>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <a href="https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts" target="_blank" class="help-link">
+                                    <span class="fas fa-external-link-alt"></span>
+                                    Keyboard shortcuts
+                                </a>
+                            </div>
+                            <!-- Editor Toolbar -->
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="btn-toolbar editor-toolbar" role="toolbar">
+                                    <div class="btn-group" role="group">
+                                        <button id="btnSearch" type="button" onclick="toolbarActions(&#39;search&#39;)" class="btn btn-default" title="Search">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <button id="btnGoto" type="button" onclick="toolbarActions(&#39;goto&#39;)" class="btn btn-default" title="Go to line.">
+                                            <i class="fas fa-terminal"></i>
+                                        </button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnUndo" type="button" onclick="toolbarActions(&#39;undo&#39;)" class="btn btn-default" title="Undo">
+                                            <i class="fas fa-undo"></i>
+                                        </button>
+                                        <button id="btnRedo" type="button" onclick="toolbarActions(&#39;redo&#39;)" class="btn btn-default" title="Redo">
+                                            <i class="fas fa-redo"></i>
+                                        </button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnLineWrap" type="button" onclick="toolbarActions(&#39;linewrap&#39;)" class="btn btn-default active" title="Wrap">
+                                            <i class="fas fa-arrows-alt-h"></i>
+                                        </button>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <select id="ddlFontSizes" class="btn btn-default form-control btn-group-ddl">
+                                        <option value="10">10px</option><option value="11">11px</option><option value="12">12px</option><option value="13">13px</option><option value="14">14px</option><option value="16">16px</option><option value="18">18px</option><option value="20">20px</option><option value="24">24px</option></select>
+                                    </div>
+                                    <div class="btn-group" role="group">
+                                        <select id="ddlModes" class="btn btn-default form-control btn-group-ddl">
+                                        <option value="abap">ABAP</option><option value="abc">ABC</option><option value="actionscript">ActionScript</option><option value="ada">ADA</option><option value="apache_conf">Apache Conf</option><option value="asciidoc">AsciiDoc</option><option value="assembly_x86">Assembly x86</option><option value="autohotkey">AutoHotKey</option><option value="batchfile">BatchFile</option><option value="bro">Bro</option><option value="c_cpp">C and C++</option><option value="c9search">C9Search</option><option value="cirru">Cirru</option><option value="clojure">Clojure</option><option value="cobol">Cobol</option><option value="coffee">CoffeeScript</option><option value="coldfusion">ColdFusion</option><option value="csharp">C#</option><option value="csound_document">Csound Document</option><option value="csound_orchestra">Csound</option><option value="csound_score">Csound Score</option><option value="css">CSS</option><option value="curly">Curly</option><option value="d">D</option><option value="dart">Dart</option><option value="diff">Diff</option><option value="dockerfile">Dockerfile</option><option value="dot">Dot</option><option value="drools">Drools</option><option value="edifact">Edifact</option><option value="eiffel">Eiffel</option><option value="ejs">EJS</option><option value="elixir">Elixir</option><option value="elm">Elm</option><option value="erlang">Erlang</option><option value="forth">Forth</option><option value="fortran">Fortran</option><option value="ftl">FreeMarker</option><option value="gcode">Gcode</option><option value="gherkin">Gherkin</option><option value="gitignore">Gitignore</option><option value="glsl">Glsl</option><option value="gobstones">Gobstones</option><option value="golang">Go</option><option value="graphqlschema">GraphQLSchema</option><option value="groovy">Groovy</option><option value="haml">HAML</option><option value="handlebars">Handlebars</option><option value="haskell">Haskell</option><option value="haskell_cabal">Haskell Cabal</option><option value="haxe">haXe</option><option value="hjson">Hjson</option><option value="html">HTML</option><option value="html_elixir">HTML (Elixir)</option><option value="html_ruby">HTML (Ruby)</option><option value="ini">INI</option><option value="io">Io</option><option value="jack">Jack</option><option value="jade">Jade</option><option value="java">Java</option><option value="javascript">JavaScript</option><option value="json">JSON</option><option value="jsoniq">JSONiq</option><option value="jsp">JSP</option><option value="jssm">JSSM</option><option value="jsx">JSX</option><option value="julia">Julia</option><option value="kotlin">Kotlin</option><option value="latex">LaTeX</option><option value="less">LESS</option><option value="liquid">Liquid</option><option value="lisp">Lisp</option><option value="livescript">LiveScript</option><option value="logiql">LogiQL</option><option value="lsl">LSL</option><option value="lua">Lua</option><option value="luapage">LuaPage</option><option value="lucene">Lucene</option><option value="makefile">Makefile</option><option value="markdown">Markdown</option><option value="mask">Mask</option><option value="matlab">MATLAB</option><option value="maze">Maze</option><option value="mel">MEL</option><option value="mixal">MIXAL</option><option value="mushcode">MUSHCode</option><option value="mysql">MySQL</option><option value="nix">Nix</option><option value="nsis">NSIS</option><option value="objectivec">Objective-C</option><option value="ocaml">OCaml</option><option value="pascal">Pascal</option><option value="perl">Perl</option><option value="pgsql">pgSQL</option><option value="php">PHP</option><option value="pig">Pig</option><option value="powershell">Powershell</option><option value="praat">Praat</option><option value="prolog">Prolog</option><option value="properties">Properties</option><option value="protobuf">Protobuf</option><option value="python">Python</option><option value="r">R</option><option value="razor">Razor</option><option value="rdoc">RDoc</option><option value="red">Red</option><option value="rhtml">RHTML</option><option value="rst">RST</option><option value="ruby">Ruby</option><option value="rust">Rust</option><option value="sass">SASS</option><option value="scad">SCAD</option><option value="scala">Scala</option><option value="scheme">Scheme</option><option value="scss">SCSS</option><option value="sh">SH</option><option value="sjs">SJS</option><option value="smarty">Smarty</option><option value="snippets">snippets</option><option value="soy_template">Soy Template</option><option value="space">Space</option><option value="sql">SQL</option><option value="sqlserver">SQLServer</option><option value="stylus">Stylus</option><option value="svg">SVG</option><option value="swift">Swift</option><option value="tcl">Tcl</option><option value="tex">Tex</option><option value="text">Text</option><option value="textile">Textile</option><option value="toml">Toml</option><option value="tsx">TSX</option><option value="twig">Twig</option><option value="typescript">Typescript</option><option value="vala">Vala</option><option value="vbscript">VBScript</option><option value="velocity">Velocity</option><option value="verilog">Verilog</option><option value="vhdl">VHDL</option><option value="wollok">Wollok</option><option value="xml">XML</option><option value="xquery">XQuery</option><option value="yaml">YAML</option><option value="django">Django</option></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="codewindow_container">
+                        <!-- Editor -->
+                        <div id="codewindow" class="show-ace-editor editor-area ace_editor ace-chrome ace_focus" style="font-size: 13px;"><textarea class="ace_text-input" wrap="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="opacity: 0; left: 193.82px; top: 488.5px; height: 17.5px; width: 7.80127px;"></textarea><div class="ace_gutter" aria-hidden="true"><div class="ace_layer ace_gutter-layer ace_folding-enabled" style="margin-top: -1.5px; height: 624px; width: 65px;"><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2751</div><div class="ace_gutter-cell " style="height: 17.5px;">2752</div><div class="ace_gutter-cell " style="height: 17.5px;">2753<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell " style="height: 17.5px;">2754</div><div class="ace_gutter-cell " style="height: 17.5px;">2755</div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2756<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2757</div><div class="ace_gutter-cell " style="height: 17.5px;">2758</div><div class="ace_gutter-cell " style="height: 17.5px;">2759<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2760</div><div class="ace_gutter-cell " style="height: 17.5px;">2761</div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2762<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2763</div><div class="ace_gutter-cell " style="height: 17.5px;">2764</div><div class="ace_gutter-cell " style="height: 17.5px;">2765<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2766</div><div class="ace_gutter-cell " style="height: 17.5px;">2767</div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2768<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2769</div><div class="ace_gutter-cell " style="height: 17.5px;">2770</div><div class="ace_gutter-cell " style="height: 17.5px;">2771<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2772</div><div class="ace_gutter-cell " style="height: 17.5px;">2773</div><div class="ace_gutter-cell " style="height: 17.5px;">2774<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell  ace_info" style="height: 17.5px;">2775</div><div class="ace_gutter-cell " style="height: 17.5px;">2776</div><div class="ace_gutter-cell  ace_warning" style="height: 17.5px;">2777<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell " style="height: 17.5px;">2778</div><div class="ace_gutter-cell " style="height: 17.5px;">2779</div><div class="ace_gutter-cell " style="height: 17.5px;">2780</div><div class="ace_gutter-cell " style="height: 17.5px;">2781</div><div class="ace_gutter-cell " style="height: 17.5px;">2782</div><div class="ace_gutter-cell " style="height: 17.5px;">2783<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell " style="height: 17.5px;">2784<span class="ace_fold-widget ace_start ace_open" style="height: 17.5px;"></span></div><div class="ace_gutter-cell " style="height: 17.5px;">2785</div><div class="ace_gutter-cell " style="height: 17.5px;">2786</div></div><div class="ace_gutter-active-line" style="top: 488.5px; height: 17.5px;"></div></div><div class="ace_scroller" style="left: 65px; right: 0px; bottom: 0px;"><div class="ace_content" style="margin-top: -1.5px; width: 1445px; height: 624px; margin-left: 0px;"><div class="ace_layer ace_print-margin-layer"><div class="ace_print-margin" style="left: 628px; visibility: visible;"></div></div><div class="ace_layer ace_marker-layer"><div class="ace_active-line" style="height:17.5px;top:490px;left:0;right:0;"></div></div><div class="ace_layer ace_text-layer" style="padding: 0px 4px;"><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">border</span>: <span class="ace_constant ace_numeric">1</span><span class="ace_keyword">px</span> <span class="ace_support ace_constant">solid</span> <span class="ace_constant ace_numeric">#89050373</span> !important</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>  <span class="ace_variable">.green</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">color</span>: <span class="ace_support ace_constant ace_color">green</span>;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>  <span class="ace_variable">.coltxtcol3</span> <span class="ace_variable">.item-boxes</span> <span class="ace_constant">h4</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">color</span>: <span class="ace_constant ace_numeric">#EC140F</span> !important;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.coltxtcol3</span> <span class="ace_variable">.item-boxes</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">border</span>: <span class="ace_constant ace_numeric">1</span><span class="ace_keyword">px</span> <span class="ace_support ace_constant">solid</span> <span class="ace_constant ace_numeric">#ec140f80</span> !important</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.coltxtcol4</span> <span class="ace_variable">.item-boxes</span> <span class="ace_constant">h4</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">color</span>: <span class="ace_constant ace_numeric">#541898</span> !important;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.coltxtcol4</span> <span class="ace_variable">.item-boxes</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">border</span>: <span class="ace_constant ace_numeric">1</span><span class="ace_keyword">px</span> <span class="ace_support ace_constant">solid</span> <span class="ace_constant ace_numeric">#541898</span> !important</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.coltxtcol5</span> <span class="ace_variable">.item-boxes</span> <span class="ace_constant">h2</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">color</span>: <span class="ace_constant ace_numeric">#2BC5E2</span> !important;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.coltxtcol5</span> <span class="ace_variable">.item-boxes</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">border</span>: <span class="ace_constant ace_numeric">1</span><span class="ace_keyword">px</span> <span class="ace_support ace_constant">solid</span> <span class="ace_constant ace_numeric">#2BC5E2</span> !important</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.headertxtsec</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">padding</span>: <span class="ace_constant ace_numeric">35</span><span class="ace_keyword">px</span> <span class="ace_constant ace_numeric">0</span> <span class="ace_constant ace_numeric">0</span><span class="ace_keyword">px</span>;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_variable">.headertxtsec</span> <span class="ace_constant">h2</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">max-width</span>: <span class="ace_constant ace_numeric">800</span><span class="ace_keyword">px</span>;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">text-align</span>: <span class="ace_support ace_constant">center</span>;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">margin</span>: <span class="ace_support ace_constant">auto</span>;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_support ace_type">padding</span>: <span class="ace_constant ace_numeric">4</span><span class="ace_keyword">px</span> <span class="ace_constant ace_numeric">55</span><span class="ace_keyword">px</span> <span class="ace_constant ace_numeric">12</span><span class="ace_keyword">px</span>;</div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_paren ace_rparen">}</span>   </div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_string">@</span><span class="ace_keyword">media</span>(min-width:600px)<span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>    <span class="ace_variable">.newtxtcust</span><span class="ace_paren ace_lparen">{</span></div></div><div class="ace_line_group" style="height:17.5px"><div class="ace_line" style="height:17.5px"><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span><span class="ace_indent-guide">    </span>  <span class="ace_support ace_type">padding</span>: <span class="ace_constant ace_numeric">0</span> <span class="ace_constant ace_numeric">70</span><span class="ace_keyword">px</span>;</div></div></div><div class="ace_layer ace_marker-layer"></div><div class="ace_layer ace_cursor-layer"><div class="ace_cursor" style="left: 128.82px; top: 490px; width: 7.80127px; height: 17.5px;"></div></div></div></div><div class="ace_scrollbar ace_scrollbar-v" style="width: 20px; bottom: 0px;"><div class="ace_scrollbar-inner" style="width: 20px; height: 32768px;"></div></div><div class="ace_scrollbar ace_scrollbar-h" style="display: none; height: 20px; left: 65px; right: 0px;"><div class="ace_scrollbar-inner" style="height: 20px; width: 1445px;"></div></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: hidden;"><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font: inherit; overflow: visible;"></div><div style="height: auto; width: auto; top: 0px; left: 0px; visibility: hidden; position: absolute; white-space: pre; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; overflow: visible;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div></div></div>
+                        <textarea id="legacy_codewindow" class="codepress " style="visibility:hidden" wrap="soft" name="page"></textarea>
+                    </td>
+                </tr>
+            </tbody></table>
+        </form>
+
+        <script type="text/plain" id="general_encoding_changed_template">
+            <p>
+                The system was unable to save your document in “{old_charset}” encoding. Most likely, your document contains characters incompatible with “{old_charset}”.
+            </p>
+
+            <p>
+                cPanel has upgraded your document to “{new_charset}” encoding. Please verify that the file opens correctly in your application.
+            </p>
+
+            <p>
+                To learn more about file encoding, visit <a href="https://go.cpanel.net/encoding">https://go.cpanel.net/encoding</a>.
+            </p>
+        </script>
+
+        
+
+<img src="./main.css - cPanel File Manager v3_files/progress_bar.gif" class="preloadedImage">
+<img src="./main.css - cPanel File Manager v3_files/check.png" class="preloadedImage">
+
+<script id="cjt_error_dialog_template" type="text/plain">
+<div class="error_notice">{error_html}</div>
+</script>
+
+<script id="cjt_http_error_dialog_template" type="text/plain">
+<div class="error_notice http_error_notice">
+    <div class="http_status">{status}: {status_text_html}</div>
+    <div><a href="javascript:void(0)" class="http_error_details_link">Show/Hide Details</a></div>
+    <div class="cjt_error_details" style="display:none">
+        <div class="url">URL ({method}):<pre>{url_html}</pre></div>
+        <div class="post">Body: <pre>{post_html}</pre></div>
+        <div class="response">Response:<pre>{response_html}</pre></div>
+    </div>
+</div>
+</script>
+
+<script>
+CPANEL.application = "cpaneld";
+YAHOO.lang.augmentObject( CPANEL.Locale.prototype.LEXICON, {"ERROR":"ERROR","Processing …":"Processing …","HTTP ERROR":"HTTP ERROR","Cancel":"Cancel","Success!":"Success!","OK":"OK","Notice":"Notice","Proceed":"Proceed","Error":"Error","An unknown error occurred.":"An unknown error occurred."} );
+</script>
+
+<script src="./main.css - cPanel File Manager v3_files/ajaxapp-min.js"></script>
+
+
+        <script type="text/javascript">
+            var savedContent = "";
+            var CHARSET = document.sform.charset.value;
+            var USE_LEGACY_EDITOR = (0) ? true : false;
+            if ( !window.LEXICON ) {
+                LEXICON = {};
+            }
+
+            LEXICON.charset_changed = "Character Encoding Change";
+            LEXICON.confirm_close   = "You have unsaved changes. Are you sure you want to close this window?";
+            LEXICON.reloading       = "Reloading…";
+
+            function loadfile(clicked_el) {
+                var isFileEdited = false;
+                if(ace_editor){
+                    isFileEdited = !ace_editor.getSession().getUndoManager().isClean();
+                }
+
+                if(isFileEdited){
+                    var sure = confirm("Are you sure you wish to open a new file? You will lose any changes you have made.");
+                    if (!sure) {
+                        return;
+                    }
+                }
+
+                var filen = document.sform.path.value;
+                var fpath = filen.split('/');;
+                var filename = fpath.pop();
+                var dir = fpath.join('/');
+                var sdir = encodeURIComponent(dir);
+                var sfilename = encodeURIComponent(filename);
+                var charset = document.getElementById('charset').value;
+
+                var pp = new CPANEL.ajax.Progress_Panel( DOM.generateId(), {
+                    status_html : "Reloading…",
+                    effect: CPANEL.ajax.FADE_MODAL
+                } );
+
+                if (clicked_el) {
+                    pp.show_from_source(clicked_el);
+                }
+                else {
+                    pp.show();
+                }
+                var tt_value = (USE_LEGACY_EDITOR) ? 1 : 0;
+                document.location.href="?dir=" + sdir + "&file=" + sfilename + '&file_charset=' + charset + '&use_legacy_editor=' + tt_value;
+                // update the title
+                document.title = filename.replace(/\n|\r/, "").html_encode() + " - cPanel File Manager v3"
+            }
+
+            var LAST_NOTICE = null;
+
+            function loadfdata(clicked_el) {
+                var path     = DOM.get("path");
+                var changedContent = "";
+                var isFileEdited = true;
+                if(USE_LEGACY_EDITOR){
+                    changedContent = editAreaLoader.getValue(editAreaEl);
+                } else {
+                    var aceSession = ace_editor.getSession();
+                    changedContent = aceSession.getValue();
+                }
+
+                if ( changedContent === savedContent && path.value === path.defaultValue ) {
+                    isFileEdited = false;
+                }
+
+                if(!isFileEdited) {
+                    LAST_NOTICE = new CPANEL.ajax.Dynamic_Notice({content:"You have made no changes to save.", level:"info", replaces:LAST_NOTICE});
+                    return;
+                }
+
+                var match = path.value.match(/^(.+)\/([^\/]+)$/);
+                if ( !match ) {
+                    LAST_NOTICE = new CPANEL.ajax.Dynamic_Notice({content:"Invalid path.", level:"error", replaces:LAST_NOTICE});
+                    return;
+                }
+
+                var api_params = {
+                    module:   "Fileman",
+                    func:     "savefile",
+                    data:     {
+                        dir:           match[1],
+                        filename:      match[2],
+                        content:       changedContent,
+                        utf8_fallback: 1,
+                        charset:       CHARSET
+                    },
+                    progress_panel: {
+                        zIndex:      2500,
+                        show_status: true,
+                        source_el:   clicked_el,
+                        status_html: "Saving “{the_file}” …".replace('{the_file}',match[2].html_encode()),
+                        success_notice_options: { replaces:LAST_NOTICE },
+                        before_success: function(result) {
+                            savedContent = (USE_LEGACY_EDITOR) ? editAreaLoader.getValue(editAreaEl) : ace_editor.getValue();
+                            return check_for_encoding_change.call(
+                                this,
+                                CPANEL.ajax.templates.general_encoding_changed_template,
+                                result.cpanel_data
+                            );
+                        }
+                    },
+                    callback: {
+                        success: function() { LAST_NOTICE = req.notice }
+                    }
+                };
+
+                var req = CPANEL.api( api_params );
+
+                return false;
+            }
+        </script>
+
+        <script type="text/javascript" charset="utf-8" src="./main.css - cPanel File Manager v3_files/ace.js">
+        </script>
+        <script type="text/javascript" charset="utf-8" src="./main.css - cPanel File Manager v3_files/ext-modelist.js">
+        </script>
+        <script type="text/javascript" src="./main.css - cPanel File Manager v3_files/edit_area_full.js"></script>
+        <script type="text/javascript" src="./main.css - cPanel File Manager v3_files/edit_area_resizer.js"></script>
+
+        <script type="text/javascript" src="./main.css - cPanel File Manager v3_files/jquery.min.js"></script>
+        <script>
+        
+
+        
+        var file_content = "\/* ==========================================================================\n   1. IMPORT GOOGLE FONTS\n   ========================================================================== *\/\n@import url(\"https:\/\/fonts.googleapis.com\/css?family=Montserrat:500,700|Open+Sans\");\n\/* ==========================================================================\n   2. GENERAL\n   ========================================================================== *\/\nbody {\n  font-family: 'Open Sans', sans-serif;\n  color: #546E7A;\n  font-size: 14px;\n  font-weight: 400;\n  background: #fff;\n  overflow-x: hidden;\n}\n\nhtml {\n  overflow-x: hidden;\n}\n\np {\n  font-size: 14px;\n  color: #546E7A;\n  line-height: 26px;\n  font-family: 'Open Sans', sans-serif;\n  margin-bottom: 0;\n}\n\na:hover, a:focus {\n  color: #009BFE;\n}\n\na {\n  color: #009BFE;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\nh1, h2, h3, h4, h5 {\n  font-family: 'Montserrat', sans-serif;\n  font-size: 30px;\n  font-weight: 700;\n  color: #263238;\n}\n\nul {\n  margin: 0;\n  padding: 0;\n}\n\nul li {\n  list-style: none;\n}\n\na:hover,\na:focus {\n  text-decoration: none;\n  outline: none;\n}\n\na:not([href]):not([tabindex]) {\n  color: #fff;\n}\n\na:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {\n  color: #fff;\n}\n\n.bg-transparent {\n  background: transparent !important;\n}\n\n.bg-defult {\n  background: #009BFE !important;\n}\n\n\/* ==========================================================================\n   2.1 Section Title\n   ========================================================================== *\/\n.section {\n  padding: 50px 0;\n}\n\n.section-header {\n  color: #fff;\n  margin-bottom: 40px;\n  text-align: center;\n  position: relative;\n}\n\n.section-header .section-title {\n  font-size: 36px;\n  margin-bottom: 20px;\n  text-transform: uppercase;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: 700;\n  color: #263238;\n  position: relative;\n}\n\n.section-header .section-title:before {\n  content: '';\n  position: absolute;\n  bottom: -8px;\n  width: 80px;\n  height: 2px;\n  background: #009BFE;\n  -webkit-transition: 0.3s;\n  -moz-transition: 0.3s;\n  transition: 0.3s;\n}\n\n.section-header span {\n  font-size: 60px;\n  color: rgba(0, 0, 0, 0.07);\n  z-index: 2;\n  font-family: 'Montserrat', sans-serif;\n  font-weight: 500;\n  text-transform: capitalize;\n  position: absolute;\n  top: 7px;\n  left: 0;\n  width: 100%;\n}\n\n\/* ==========================================================================\n   2.2 Buttons\n   ========================================================================== *\/\n.btn {\n  font-size: 14px;\n  padding: 10px 30px;\n  border-radius: 30px;\n  font-weight: 400;\n  color: #fff;\n  text-transform: uppercase;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n  display: inline-block;\n}\n\n.btn:focus,\n.btn:active {\n  box-shadow: none;\n  outline: none;\n  color: #fff;\n}\n\n.btn-common {\n  background-color: #009BFE;\n  position: relative;\n  z-index: 1;\n  padding: 12px 32px;\n  border-radius: 30px;\n}\n\n.btn-common:hover {\n  color: #fff;\n}\n\n.btn-effect {\n  overflow: hidden;\n}\n\n.btn-effect:after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 100%;\n  z-index: 1;\n  left: 0;\n  top: 0;\n  background: rgba(0, 0, 0, 0.1);\n  -webkit-transition: all 0.3s ease;\n  -moz-transition: all 0.3s ease;\n  transition: all 0.3s ease;\n}\n\n.btn-effect:hover:after {\n  width: 100%;\n}\n\n.btn-border {\n  border-style: solid;\n  border-width: 2px;\n  cursor: pointer;\n  background-color: transparent;\n  border-color: #fff;\n  color: #fff;\n}\n\n.btn-border:hover {\n  color: #ffffff;\n  background-color: #009BFE;\n}\n\n.btn-lg {\n  padding: 14px 33px;\n  text-transform: uppercase;\n  font-size: 16px;\n}\n\n.btn-rm {\n  padding: 7px 10px;\n  text-transform: capitalize;\n}\n\nbutton:focus {\n  outline: none !important;\n}\n\n.clear {\n  clear: both;\n}\n\n\/* ==========================================================================\n   2.3 Social Iocns\n   ========================================================================== *\/\n.social-icons {\n  margin-bottom: 20px;\n}\n\n.social-icons ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n\n.social-icons ul li {\n  display: inline;\n}\n\n.social-icons ul li a {\n  display: inline-block;\n  margin-left: 5px;\n  margin-right: 5px;\n  margin-bottom: 15px;\n  border-radius: 4px;\n  border: 1px solid rgba(255, 254, 254, 0.07);\n  line-height: 40px;\n  width: 40px;\n  height: 40px;\n  text-align: center;\n  font-size: 16px;\n}\n\n.social-icons ul li a:hover {\n  color: #fff;\n}\n\n.facebook a {\n  color: #4867AA;\n}\n\n.facebook a:hover {\n  background: #4867AA;\n}\n\n.twitter a {\n  color: #1DA1F2;\n}\n\n.twitter a:hover {\n  background: #1DA1F2;\n}\n\n.google-plus a {\n  color: #DD4D42;\n}\n\n.google-plus a:hover {\n  background: #DD4D42;\n}\n\n.youtube a {\n  color: #DF2926;\n}\n\n.youtube a:hover {\n  background: #DF2926;\n}\n\n.linkedin a {\n  color: #007BB6;\n}\n\n.linkedin a:hover {\n  background: #007BB6;\n}\n\n.pinterest a {\n  color: #BD081C;\n}\n\n.pinterest a:hover {\n  background: #BD081C;\n}\n\n.dribbble a {\n  color: #EA4C89;\n}\n\n.dribbble a:hover {\n  background: #EA4C89;\n}\n\n.behance a {\n  color: #0B7CFF;\n}\n\n.behance a:hover {\n  background: #0B7CFF;\n}\n\n\/* ==========================================================================\n   2.4  Pre Loader\n   ========================================================================== *\/\n#loader {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: #263238;\n  z-index: 9999999999;\n}\n\n.spinner {\n  width: 40px;\n  height: 40px;\n  top: 45%;\n  position: relative;\n  margin: 0px auto;\n}\n\n.double-bounce1, .double-bounce2 {\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  background-color: #009BFE;\n  opacity: 0.6;\n  position: absolute;\n  top: 0;\n  left: 0;\n  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;\n  animation: sk-bounce 2.0s infinite ease-in-out;\n}\n\n.double-bounce2 {\n  -webkit-animation-delay: -1.0s;\n  animation-delay: -1.0s;\n}\n\n@-webkit-keyframes sk-bounce {\n  0%, 100% {\n    -webkit-transform: scale(0);\n  }\n  50% {\n    -webkit-transform: scale(1);\n  }\n}\n\n@keyframes sk-bounce {\n  0%, 100% {\n    transform: scale(0);\n    -webkit-transform: scale(0);\n  }\n  50% {\n    transform: scale(1);\n    -webkit-transform: scale(1);\n  }\n}\n\n\/* ========================================================================== \n  -2.5 Scroll To Up \n   ========================================================================== *\/\n.back-to-top {\n  display: none;\n  position: fixed;\n  bottom: 18px;\n  right: 15px;\n}\n\n.back-to-top i {\n  display: block;\n  width: 36px;\n  height: 36px;\n  line-height: 36px;\n  color: #fff;\n  font-size: 14px;\n  text-align: center;\n  border-radius: 30px;\n  background-color: #009BFE;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\n.overlay-2 {\n  background: rgba(0, 0, 0, 0.9) !important;\n}\n\n.overlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  \/* background: #009BFE; *\/\n  opacity: 0.5;\n  filter: alpha(opacity=80);\n}\n\n\/* ==========================================================================\n   Navbar Style\n   ========================================================================== *\/\n.bg-faded {\n  background-color: #fff;\n}\n\n.mainmenu-area {\n  padding: 10px 0;\n  border: none;\n  margin: 0;\n  -webkit-transition: 0.6s;\n  -moz-transition: 0.6s;\n  transition: 0.6s;\n  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);\n  background-color: #ffffff;\n}\n\n.mainmenu-area .menu-button {\n  position: relative;\n  color: #263238;\n  line-height: 58px;\n  top: 0;\n  outline: none;\n}\n\n.logo-menu a {\n  font-size: 20px;\n  color: #fff;\n}\n\n.menu-bg {\n  background-color: #fff !important;\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12);\n  z-index: 999;\n  padding: 3px;\n}\n\n.menu-bg .menu-button {\n  top: 0;\n}\n\n.menu-bg .menu-button:hover {\n  cursor: pointer;\n  color: #009BFE;\n}\n\n.menu-bg .logo-menu a {\n  color: #009BFE;\n}\n\n.menu-bg .navbar-nav .nav-link {\n  color: #263238 !important;\n}\n\n.menu-bg .navbar-nav .nav-link:hover {\n  color: #009BFE !important;\n}\n\n.menu-bg .navbar-nav .active {\n  color: #009BFE !important;\n}\n\n.menu-button:hover {\n  cursor: pointer;\n  opacity: #eee;\n}\n\n.bg-white {\n  background-color: #fff !important;\n  \/* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12); *\/\n  border-bottom: 1px solid #000;\n  z-index: 999;\n  padding: 5px;\n}\n\n.bg-white .menu-button {\n  top: 0;\n}\n\n.bg-white .menu-button:hover {\n  cursor: pointer;\n  color: #009BFE;\n}\n\n.bg-white .logo-menu a {\n  color: #009BFE;\n}\n\n.bg-white .navbar-nav .nav-link {\n  color: #263238 !important;\n}\n\n.bg-white .navbar-nav .nav-link:hover {\n  color: #009BFE !important;\n}\n\n.bg-white .navbar-nav .active {\n  color: #009BFE !important;\n}\n\n.close-button {\n  cursor: pointer;\n}\n\n.navbar-expand-md .navbar-nav .nav-link {\n  color: #fff;\n  font-size: 14px;\n  padding: 5px 0px;\n  margin-left: 30px;\n  position: relative;\n}\n\n.navbar-expand-md .navbar-nav .nav-link:before {\n  content: '';\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 0;\n  height: 2px;\n  background: #009BFE;\n  -webkit-transition: 0.3s;\n  -moz-transition: 0.3s;\n  transition: 0.3s;\n}\n\n.navbar-expand-md .navbar-nav .active::before,\n.navbar-expand-md .navbar-nav .nav-link:hover::before {\n  width: 50%;\n}\n\n.navbar-brand img {\n  max-width: 115px;\n}\n\n.navbar-expand-md .navbar-nav .nav-link:focus,\n.navbar-expand-md .navbar-nav .nav-link:hover,\n.navbar-expand-md .navbar-nav .nav-link:hover:before {\n  color: #009BFE;\n}\n\n.navbar-expand-md .navbar-nav .active > .nav-link,\n.navbar-expand-md .navbar-nav .nav-link.active,\n.navbar-expand-md .navbar-nav .nav-link.active:before,\n.navbar-expand-md .navbar-nav .nav-link.open,\n.navbar-expand-md .navbar-nav .open > .nav-link {\n  color: #009BFE;\n}\n\n.navbar-expand-md .navbar-toggler {\n  background: #009BFE;\n  border-radius: 0px;\n  margin: 5px;\n  cursor: pointer;\n  float: right;\n}\n\n.navbar-expand-md .navbar-toggler i {\n  color: #fff !important;\n}\n\n.mainmenu-area .navbar-nav .nav-link {\n  color: #263238 !important;\n}\n\n.collapse.show {\n  background: #3e3a3a;\n  margin-bottom: 10px;\n  -webkit-transition: 0.6s;\n  -moz-transition: 0.6s;\n  transition: 0.6s;\n}\n\n.menu-bg .collapse.show {\n  background: #fff;\n  margin-bottom: 10px;\n  -webkit-transition: 0.6s;\n  -moz-transition: 0.6s;\n  transition: 0.6s;\n}\n\n.navbar-expand-md .navbar-toggler:active {\n  border: 1px solid #009BFE;\n  color: #009BFE;\n}\n\n\/* ==========================================================================\n   Hero Area\n   ========================================================================== *\/\n.hero-area {\n  background: url(..\/img\/hero-area.jpg) no-repeat;\n  background-size: cover;\n  color: #fff;\n  overflow: hidden;\n  position: relative;\n}\n\n.hero-area .overlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  background: #009BFE;\n  opacity: 0.7;\n}\n\n.hero-area .contents {\n  padding: 160px 0 140px;\n}\n\n.hero-area .contents h2 {\n  color: #fff;\n  font-size: 52px;\n  font-weight: 300;\n  margin-bottom: 25px;\n}\n\n.hero-area .contents h4 {\n  font-size: 16px;\n  color: #fff;\n  font-weight: 300;\n  line-height: 30px;\n  margin-bottom: 20px;\n}\n\n.hero-area .contents p {\n  color: #fff;\n  font-size: 14px;\n  line-height: 26px;\n}\n\n.hero-area .contents .btn {\n  margin-top: 40px;\n  text-transform: uppercase;\n}\n\n.hero-area .banner_bottom_btn {\n  margin-top: 40px;\n}\n\n.hero-area .banner_bottom_btn i {\n  color: #fff;\n  font-size: 48px;\n  -webkit-transition: all 0.2s linear;\n  -moz-transition: all 0.2s linear;\n  -o-transition: all 0.2s linear;\n  transition: all 0.2s linear;\n}\n\n.hero-area .banner_bottom_btn i:hover {\n  color: #009BFE;\n}\n\n.intro-img {\n  padding: 148px 0 0px;\n}\n\n.intro-img img {\n  display: block;\n  height: auto;\n  max-width: 100%;\n}\n\n\/* ==========================================================================\n Hero Production version\n ========================================================================== *\/\n.hero-area-2 {\n  background: url(..\/img\/bg\/hero-area-2.jpg) fixed no-repeat;\n  background-size: cover;\n  color: #fff;\n  overflow: hidden;\n  position: relative;\n}\n\n.hero-area-2 .overlay {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  background: rgba(0, 0, 0, 0.8);\n  opacity: 0.8;\n}\n\n.hero-area-2 .contents {\n  padding: 160px 0 140px;\n}\n\n.hero-area-2 .contents h3 {\n  color: #fff;\n  font-size: 48px;\n  font-weight: 500;\n}\n\n.hero-area-2 .contents h2 {\n  color: #fff;\n  font-size: 42px;\n  margin-bottom: 30px;\n  font-weight: 700;\n}\n\n.hero-area-2 .contents h4 {\n  font-size: 18px;\n  color: #fff;\n  font-weight: 400;\n  line-height: 30px;\n  letter-spacing: 0.5px;\n  margin-bottom: 20px;\n}\n\n.hero-area-2 .contents p {\n  font-size: 14px;\n  color: #fff;\n  line-height: 26px;\n}\n\n.hero-area-2 .contents .header-button {\n  margin-top: 30px;\n}\n\n.hero-area-2 .contents .btn {\n  margin: 10px;\n  text-transform: uppercase;\n}\n\n.hero-area-2 .contents .tag-type ul {\n  position: relative;\n}\n\n.hero-area-2 .contents .tag-type ul li {\n  display: inline-block;\n  padding: 10px;\n  position: relative;\n}\n\n.hero-area-2 .contents .tag-type ul li a {\n  color: #fff;\n  text-transform: uppercase;\n}\n\n.hero-area-2 .contents .tag-type ul li:before {\n  content: '';\n  width: 4px;\n  height: 4px;\n  background: #fff;\n  position: absolute;\n  top: 19px;\n  right: -5px;\n  border-radius: 50%;\n}\n\n.hero-area-2 .contents .tag-type ul li:before:last-child {\n  display: none;\n}\n\n.hero-area-2 .contents .tag-type ul li:last-child:before {\n  background: transparent;\n}\n\n.hero-area-2 .contents .tag-type ul:before {\n  content: '';\n  width: 40px;\n  height: 1px;\n  background: #f1f1f1;\n  position: absolute;\n  top: 20px;\n  margin-left: -45px;\n}\n\n.hero-area-2 .contents .tag-type ul:after {\n  content: '';\n  width: 40px;\n  height: 1px;\n  background: #f1f1f1;\n  position: absolute;\n  top: 20px;\n  margin-left: 6px;\n}\n\n.hero-area-2 .contents .arrow-down-icon {\n  border: 2px solid #fff;\n  width: 42px;\n  height: 42px;\n  line-height: 42px;\n  margin: 30px auto;\n  border-radius: 50%;\n  font-size: 18px;\n}\n\n.hero-area-2 .contents .arrow-down-icon a {\n  color: #fff;\n}\n\n\/* ==========================================================================\n   Video Background\n   ========================================================================== *\/\n#video-area {\n  overflow: hidden;\n  position: relative;\n}\n\n#video-area .contents {\n  padding: 160px 0 80px;\n}\n\n#video-area .contents h1 {\n  color: #fff;\n  font-size: 50px;\n  font-weight: 300;\n  margin-bottom: 25px;\n  line-height: 70px;\n}\n\n#video-area .contents p {\n  font-size: 14px;\n  color: #fff;\n  font-weight: 400;\n  line-height: 30px;\n  letter-spacing: 0.5px;\n}\n\n#video-area .contents .btn {\n  margin: 20px 10px;\n  text-transform: uppercase;\n}\n\n#video-area .banner_bottom_btn {\n  margin-top: 40px;\n}\n\n#video-area .banner_bottom_btn i {\n  color: #fff;\n  font-size: 48px;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\n#video-area .banner_bottom_btn i:hover {\n  color: #009BFE;\n}\n\n\/* ==========================================================================\n  About Section Style\n   ========================================================================== *\/\n#about {\n  position: relative;\n  background: #f9f9f9;\n}\n\n#about .box-item {\n  padding: 15px 0;\n}\n\n#about .box-item .icon {\n  float: left;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\n#about .box-item .icon i {\n  color: #009BFE;\n  display: inline-block;\n  font-size: 36px;\n  margin-bottom: 20px;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\n#about .box-item .text {\n  margin-left: 64px;\n}\n\n#about .box-item .text h4 {\n  font-weight: 500;\n  font-size: 18px;\n  line-height: 22px;\n}\n\n#about .box-item .text p {\n  font-size: 14px;\n  line-height: 26px;\n}\n\n#about .show-box {\n  margin: 30px 40px;\n}\n\n\/* ==========================================================================\n  About Area\n  ========================================================================== *\/\n#about-area .about-thumb {\n  position: relative;\n  z-index: 1;\n  margin-left: 80px;\n  margin-top: 60px;\n}\n\n#about-area .about-thumb img {\n  width: 100%;\n  height: auto;\n}\n\n#about-area .about-thumb-2 {\n  position: absolute;\n  z-index: 5;\n  left: 5%;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n  -ms-transform: translateY(-50%);\n  transform: translateY(-50%);\n}\n\n\/* ==========================================================================\n   Clients \n   ========================================================================== *\/\n#clients {\n  background: #f9f9f9;\n}\n\n#clients .client-item-wrapper {\n  text-align: center;\n  margin: 0 5px;\n  -moz-transition: all .6s ease;\n  -webkit-transition: all .6s ease;\n  transition: all .6s ease;\n}\n\n#clients #clients-scroller img:hover {\n  -moz-transition: all .6s ease;\n  -webkit-transition: all .6s ease;\n  transition: all .6s ease;\n  opacity: 1.0;\n}\n\n#clients #clients-scroller .owl-pagination {\n  display: none;\n}\n\n\/* ==========================================================================\n    call to action\n   ========================================================================== *\/\n#cta {\n  background: url(..\/img\/bg\/bg-cta.jpg) fixed;\n  background-size: cover;\n}\n\n#cta h5 {\n  color: #fff;\n  font-size: 32px;\n  font-weight: 500;\n  line-height: 48px;\n}\n\n#cta .btn {\n  margin: 30px 10px;\n}\n\n.call-action {\n  background: #f9f9f9;\n}\n\n.call-action .cta-trial h3 {\n  font-size: 28px;\n  font-weight: 500;\n  margin-bottom: 28px;\n  letter-spacing: 1px;\n}\n\n.call-action .cta-trial p {\n  margin-bottom: 30px;\n}\n\n\/* ==========================================================================\n Video promo Style\n ========================================================================== *\/\n.video-promo {\n  background-repeat: no-repeat !important;\n  width: 100%;\n  background-size: cover !important;\n  position: relative;\n}\n\n.video-promo .video-promo-content {\n  color: #fff;\n}\n\n.video-promo .video-promo-content .video-popup {\n  width: 80px;\n  height: 80px;\n  line-height: 80px;\n  text-align: center;\n  border: 3px solid #fff;\n  color: #fff;\n  border-radius: 50%;\n  display: inline-block;\n  font-size: 26px;\n}\n\n.video-promo .video-promo-content h2 {\n  margin-top: 0px;\n  color: #fff;\n  font-size: 20px;\n  text-transform: uppercase;\n}\n\n.video-promo .video-promo-content p {\n  color: #fff;\n}\n\n\/* ==========================================================================\n   Portfolio Section\n   ========================================================================== *\/\n#portfolios {\n  background: #f9f9f9;\n}\n\n#portfolios .mix {\n  padding: 0px;\n}\n\n#portfolios .portfolio-item {\n  padding: 10px;\n}\n\n#portfolio .mix {\n  display: none;\n}\n\n.controls {\n  text-align: center;\n  padding: 0px 0px 20px;\n}\n\n.controls .active {\n  color: #009BFE !important;\n  border-color: #009BFE;\n  background: transparent;\n}\n\n.controls .btn {\n  text-transform: uppercase;\n  margin: 2px;\n}\n\n.controls:hover {\n  color: #fff;\n  cursor: pointer;\n}\n\n.shot-item {\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n}\n\n.shot-item img {\n  width: 100%;\n  height: 100%;\n  -webkit-transition-duration: 4000ms;\n  -o-transition-duration: 4000ms;\n  transition-duration: 4000ms;\n}\n\n.shot-item .single-content {\n  background-color: rgba(22, 26, 39, 0.7);\n  opacity: 0.90;\n  height: 100%;\n  left: 0;\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  -webkit-transition-duration: 500ms;\n  -o-transition-duration: 500ms;\n  transition-duration: 500ms;\n  width: 100%;\n}\n\n.shot-item .single-content .fancy-table {\n  display: table;\n  height: 100%;\n  left: 0;\n  position: relative;\n  top: 0;\n  width: 100%;\n  z-index: 2;\n}\n\n.shot-item .single-content .fancy-table .table-cell {\n  display: table-cell;\n  vertical-align: middle;\n  text-align: center;\n}\n\n.shot-item .single-content .zoom-icon a {\n  color: #fff;\n  font-size: 30px;\n  margin-bottom: 15px;\n}\n\n.shot-item .single-content a {\n  color: #fff;\n  font-size: 16px;\n}\n\n.shot-item:hover img {\n  -webkit-transform: scale(1.1);\n  -ms-transform: scale(1.1);\n  transform: scale(1.1);\n}\n\n.shot-item:hover .single-content {\n  opacity: 0.8;\n}\n\n\/* Services Item *\/\n.item-boxes {\n  padding: 30px;\n  border-radius: 4px;\n  border: 1px solid #eaeaea;\n  margin: 15px 0;\n  webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\n.item-boxes .icon {\n  margin-bottom: 10px;\n}\n\n.item-boxes .icon i {\n  font-size: 30px;\n  line-height: 60px;\n  color: #009BFE;\n}\n\n.item-boxes h4 {\n  font-size: 18px;\n  font-weight: 500;\n  margin-bottom: 0px;\n  font-family: assistant-semibold,sans-serif;\n}\n\n.item-boxes p {\n  margin: 0;\n}\n\n.item-boxes:hover {\n  background: transparent;\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);\n}\n\n.services-item {\n  padding: 30px 15px;\n  background: #fff;\n  border-radius: 4px;\n  text-align: center;\n  margin-bottom: 0px;\n  position: relative;\n  transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -webkit-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n}\n\n.services-item .icon {\n  margin-bottom: 20px;\n}\n\n.services-item .icon i {\n  width: 60px;\n  height: 60px;\n  background: #f9f9f9;\n  display: inline-block;\n  line-height: 60px;\n  font-size: 24px;\n  text-align: center;\n  border-radius: 50%;\n  -webkit-transform: scale(1);\n  -moz-transform: scale(1);\n  -ms-transform: scale(1);\n  -o-transform: scale(1);\n  transform: scale(1);\n  transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -webkit-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n}\n\n.services-item .color-1 i {\n  background: #FAE3E3;\n  color: #D82928 !important;\n}\n\n.services-item .color-2 i {\n  background: #E6F8ED;\n  color: #57D283 !important;\n}\n\n.services-item .color-3 i {\n  background: #E3EAFA;\n  color: #457BF4 !important;\n}\n\n.services-item .color-4 i {\n  background: #F3EAD6;\n  color: #f1a90a !important;\n}\n\n.services-item .color-5 i {\n  background: #E7E6FF;\n  color: #7271FF !important;\n}\n\n.services-item .color-6 i {\n  background: #DEDEDE;\n  color: #35393D !important;\n}\n\n.services-item .services-content {\n  padding-left: 65px;\n}\n\n.services-item .services-content h3 {\n  margin-bottom: 10px;\n  font-size: 18px;\n  font-weight: 500;\n}\n\n.services-item .services-content h3 a {\n  color: #272727;\n}\n\n.services-item .services-content h3 a:hover {\n  color: #009BFE;\n}\n\n.services-item:hover {\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);\n}\n\n.services-item:hover .icon i {\n  background: transparent;\n  -webkit-transform: scale(1.1);\n  -moz-transform: scale(1.1);\n  -ms-transform: scale(1.1);\n  -o-transform: scale(1.1);\n  transform: scale(1.1);\n}\n\n.featured-bg {\n  background: #fafafa;\n}\n\n.featured-bg .intro-title {\n  font-size: 18px;\n  font-weight: 500;\n  margin-bottom: 15px;\n}\n\n.featured-bg .title-sub {\n  font-size: 22px;\n  margin-bottom: 15px;\n  line-height: 36px;\n}\n\n.featured-bg .intro-desc {\n  margin-bottom: 20px;\n}\n\n.featured-bg .featured-item {\n  margin-bottom: 30px;\n  position: relative;\n  transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -webkit-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n}\n\n.featured-bg .featured-item .icon {\n  float: left;\n  padding-right: 15px;\n}\n\n.featured-bg .featured-item .icon i {\n  font-size: 32px;\n  text-align: center;\n  margin-bottom: 30px;\n  color: #009BFE;\n  transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -webkit-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n}\n\n.featured-bg .featured-item h3 {\n  margin-bottom: 15px;\n  font-size: 18px;\n  font-weight: 500;\n  line-height: 36px;\n}\n\n.featured-bg .featured-item h3 a {\n  color: #272727;\n}\n\n.featured-bg .featured-item h3 a:hover {\n  color: #009BFE;\n}\n\n\/* ==========================================================================\n   Featured Section Start\n   ========================================================================== *\/\n.featured-box {\n  margin-top: 15px;\n  margin-bottom: 15px;\n}\n\n.featured-box .featured-icon {\n  float: left;\n}\n\n.featured-box .featured-icon i {\n  font-size: 30px;\n  color: #009BFE;\n  text-align: center;\n  float: left;\n  margin-right: 25px;\n  margin-bottom: 85px;\n  display: block;\n}\n\n.featured-box .featured-content {\n  padding-left: 40px;\n  position: relative;\n}\n\n.featured-box .featured-content .icon-o {\n  font-size: 86px;\n  color: rgba(0, 0, 0, 0.07);\n  z-index: 2;\n  font-weight: 400;\n  text-transform: capitalize;\n  position: absolute;\n  top: 0px;\n  left: 50px;\n  width: 100%;\n}\n\n.featured-box .featured-content h4 {\n  font-size: 18px;\n  font-weight: 500;\n  margin-bottom: 10px;\n  transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -webkit-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n}\n\n.featured-box .featured-content p {\n  font-size: 14px;\n}\n\n\/* ==========================================================================\n Team Section\n   ========================================================================== *\/\n.single-team:hover .team-details {\n  opacity: 1;\n}\n\n.single-team {\n  position: relative;\n  background: #f9f9f9;\n  border-radius: 4px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);\n  border-radius: 0px;\n  overflow: hidden;\n}\n\n.single-team:hover {\n  -webkit-transform: translateY(-5px);\n  transform: translateY(-5px);\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);\n}\n\n.single-team img {\n  width: 100%;\n}\n\n.single-team .team-inner {\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n\n.single-team .team-details {\n  padding: 20px;\n  width: 100%;\n  text-align: center;\n  -webkit-transition: 0.5s;\n  -moz-transition: 0.5s;\n  transition: 0.5s;\n}\n\n.single-team .team-details .team-title {\n  margin-bottom: 5px;\n  font-size: 18px;\n  font-weight: 500;\n  color: #263238;\n}\n\n.single-team .team-details p {\n  margin-bottom: 15px;\n}\n\n.single-team .social-list li {\n  display: inline-block;\n}\n\n.single-team .social-list li a {\n  display: block;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n  width: 34px;\n  color: #009BFE;\n  font-size: 14px;\n  background: #fff;\n  border-radius: 50px;\n  -webkit-transition: 0.5s;\n  -moz-transition: 0.5s;\n  transition: 0.5s;\n}\n\n.single-team .social-list .facebook a:hover {\n  background: #4867aa;\n  color: #fff;\n}\n\n.single-team .social-list .twitter a:hover {\n  background: #1da1f2;\n  color: #fff;\n}\n\n.single-team .social-list .google-plus a:hover {\n  background: #dd4d42;\n  color: #fff;\n}\n\n.single-team .social-list .linkedin a:hover {\n  background: #007bb6;\n  color: #fff;\n}\n\n.testimonial {\n  background: #f9f9f9;\n}\n\n.testimonial-item {\n  padding: 30px;\n  margin: 15px;\n  background: #fff;\n  border-radius: 4px;\n  border: 1px solid rgba(0, 0, 0, 0.06);\n}\n\n.testimonial-item .author {\n  display: inline-block;\n  margin-bottom: 20px;\n}\n\n.testimonial-item .author .img-thumb {\n  float: left;\n  overflow: hidden;\n  position: relative;\n}\n\n.testimonial-item .author .img-thumb img {\n  border-radius: 50%;\n  width: 75%;\n}\n\n.testimonial-item .author .author-info {\n  float: left;\n  padding: 3px 0;\n}\n\n.testimonial-item .author .author-info h2 {\n  font-size: 18px;\n  font-weight: 500;\n  line-height: 30px;\n  margin-bottom: 0;\n}\n\n.testimonial-item .author .author-info h2 a {\n  color: #484848;\n}\n\n.testimonial-item .author .author-info h2 a:hover {\n  color: #009BFE;\n}\n\n.testimonial-item .content-inner {\n  overflow: hidden;\n}\n\n.testimonial-item .content-inner .description {\n  width: 100%;\n  margin-bottom: 10px;\n}\n\n.testimonial-item .content-inner span {\n  color: #009BFE;\n}\n\n.owl-pagination {\n  position: absolute;\n  width: 100%;\n  left: 0;\n  bottom: -40px;\n}\n\n.owl-theme .owl-controls .owl-page {\n  display: inline-block;\n  zoom: 1;\n  *display: inline;\n}\n\n.owl-theme .owl-controls .owl-page span {\n  display: block;\n  width: 12px;\n  height: 12px;\n  margin: 2px 4px;\n  filter: alpha(opacity=50);\n  opacity: 1;\n  border-radius: 30px;\n  background: #fff;\n  border: 2px solid #fff;\n  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);\n  transition: all 0.4s ease-in-out;\n  -moz-transition: all 0.4s ease-in-out;\n  -webkit-transition: all 0.4s ease-in-out;\n  -o-transition: all 0.4s ease-in-out;\n}\n\n.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {\n  background: #009BFE;\n}\n\n\/* ==========================================================================\n  Pricing Table\n  ========================================================================== *\/\n.pricing-table {\n  padding: 20px 0px 0px;\n  margin: 0 auto;\n  margin-bottom: 5px;\n  border: 1px solid #eaeaea;\n  text-align: center;\n  border-radius: 4px;\n  background-color: #FFFFFF;\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);\n  -webkit-transition: all 0.3s;\n  -moz-transition: all 0.3s;\n  transition: all 0.3s;\n  margin-top: 30px;\n}\n\n.pricing-table:hover {\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);\n}\n\n.pricing-table .pricing-details h2 {\n  font-size: 18px;\n  color: #546E7A;\n  font-weight: 500;\n  padding-top: 15px;\n  padding-bottom: 15px;\n}\n\n.pricing-table .pricing-details .price {\n  color: #263238;\n  font-size: 36px;\n  line-height: 40px;\n  font-weight: 500;\n  letter-spacing: -1px;\n  background-color: #fff !important;\n  border-bottom: 1px solid #e9edf2;\n  padding-bottom: 40px;\n}\n\n.pricing-table .pricing-details .price span {\n  font-size: 12px;\n  line-height: 15px;\n  font-weight: 400;\n  color: #A2A2A2;\n}\n\n.pricing-table .pricing-details ul li {\n  padding: 12px;\n  font-size: 14px;\n}\n\n.pricing-table .pricing-details ul li:nth-child(even) {\n  background-color: #f9f9f9;\n}\n\n.pricing-table .plan-button {\n  padding: 30px 0;\n  background: #f9f9f9;\n}\n\n.pricing-big {\n  -webkit-transform: scale3d(1.1, 1.1, 1.1);\n  -moz-transform: scale3d(1.1, 1.1, 1.1);\n  transform: scale3d(1.1, 1.1, 1.1);\n}\n\n\/* ==========================================================================\n  Slider\n   ========================================================================== *\/\n#carousel-area {\n  overflow: hidden;\n  background: #742C7A;\n}\n\n#carousel-area .carousel-item {\n  background-size: 100%;\n}\n.carousel-item img{\n  width: 100%;\n}\n\n#carousel-area .carousel-item .carousel-caption {\n  bottom: 8%;\n  right: 10%;\n  left: 12%;\n  text-shadow: none;\n  padding-top: 0;\n  padding-bottom: 0;\n}\n\n#carousel-area .carousel-item .carousel-caption h3 {\n  color: #fff;\n  font-weight: 500;\n  font-size: 26px;\n  line-height: 38px;\n}\n\n#carousel-area .carousel-item .carousel-caption h2 {\n  font-size: 45px;\n  font-weight: 700;\n  color: #fff;\n}\n\n#carousel-area .carousel-item .carousel-caption h4 {\n  color: #ffffff;\n  font-size: 18px;\n  font-weight: 500;\n  margin-bottom: 30px;\n}\n\n#carousel-area .carousel-control {\n  display: none;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n}\n\n#carousel-area:hover .carousel-control {\n  display: block;\n  -webkit-transition: all 0.3s ease-in-out;\n  -moz-transition: all 0.3s ease-in-out;\n  -o-transition: all 0.3s ease-in-out;\n  transition: all 0.3s ease-in-out;\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  -webkit-animation-name: fadeIn;\n  animation-name: fadeIn;\n}\n\n#carousel-area .carousel-control-next, #carousel-area .carousel-control-prev {\n  opacity: 1;\n}\n\n#carousel-area .carousel-control-next i, #carousel-area .carousel-control-prev i {\n  width: 48px;\n  line-height: 48px;\n  height: 48px;\n  color: #fff;\n  font-size: 24px;\n  display: inline-block;\n  background: #009BFE;\n  border-radius: 30px;\n  -webkit-transition: all 0.2s linear;\n  -moz-transition: all 0.2s linear;\n  -o-transition: all 0.2s linear;\n  transition: all 0.2s linear;\n}\n\n#carousel-area .carousel-control-next i:hover, #carousel-area .carousel-control-prev i:hover {\n  opacity: 0.9;\n}\n\n#carousel-area .carousel-indicators li:hover,\n#carousel-area .carousel-indicators li.active {\n  opacity: 1;\n}\n\n#carousel-area .carousel-indicators {\n  bottom: 35px;\n}\n\n#carousel-area .carousel-indicators li {\n  width: 30px;\n  height: 7px;\n  border-radius: 4px;\n}\n\n#slider-area {\n  margin-top: -1px;\n}\n\n#slider-area .btn {\n  margin-right: 15px;\n}\n\n#slider-area .large_white {\n  color: #fff;\n}\n\n#slider-area .about-info p {\n  color: #333;\n}\n\n.contents p {\n  font-size: 16px;\n  font-weight: 400;\n  line-height: 50px;\n}\n\n.contents .header-button .btn i {\n  margin-left: 10px;\n}\n\n\/* ==========================================================================\n   Blog \n   ========================================================================== *\/\n#blog .blog-item-wrapper {\n  background: #fff;\n  border-radius: 4px;\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);\n  -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;\n  -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;\n  transition: transform 0.2s linear, box-shadow 0.2s linear;\n}\n\n#blog .blog-item-wrapper:hover {\n  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.35);\n  -webkit-transform: translateY(-5px);\n  transform: translateY(-5px);\n}\n\n#blog .blog-item-wrapper:hover .blog-item-img:before {\n  opacity: 1;\n}\n\n#blog .blog-item-img {\n  position: relative;\n}\n\n#blog .blog-item-img img {\n  width: 100%;\n  border-radius: 4px;\n}\n\n#blog .blog-item-text {\n  padding: 20px 30px;\n}\n\n#blog .blog-item-text .date {\n  font-size: 14px;\n  margin-bottom: 10px;\n}\n\n#blog .blog-item-text .date i {\n  margin-right: 7px;\n}\n\n#blog .blog-item-text h3 {\n  line-height: 26px;\n  font-size: 18px;\n  font-weight: 500;\n  margin-bottom: 10px;\n}\n\n#blog .blog-item-text h3 a {\n  color: #263238;\n}\n\n#blog .blog-item-text h3 a:hover {\n  color: #009BFE;\n}\n\n.meta-tags {\n  margin-bottom: 10px;\n}\n\n.meta-tags span {\n  color: #999;\n  font-size: 14px;\n  margin-right: 10px;\n}\n\n.meta-tags span i {\n  margin-right: 5px;\n}\n\n.meta-tags span a {\n  color: #999;\n}\n\n.meta-tags span a:hover {\n  color: #009BFE;\n}\n\n\/* ==========================================================================\n    Single Page Style\n   ========================================================================== *\/\n#blog-single {\n  padding: 80px 0;\n  background: #ECF0F1;\n}\n\n#blog-single .blog-post {\n  background: #fff;\n  overflow: hidden;\n  margin-bottom: 40px;\n}\n\n#blog-single .blog-post .post-thumb img {\n  width: 100%;\n}\n\n#blog-single .blog-post .post-content {\n  padding: 30px;\n}\n\n#blog-single .blog-post .post-content h3 {\n  font-size: 30px;\n  padding-bottom: 10px;\n}\n\n.blog-comment {\n  background: #fff;\n  padding: 50px 30px;\n  margin-top: 30px;\n  overflow: hidden;\n}\n\n.blog-comment h4 {\n  font-size: 24px;\n  margin-bottom: 30px;\n}\n\n.blog-comment .comment-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  margin-bottom: 50px;\n}\n\n.blog-comment .comment-list .the-comment {\n  border-bottom: 1px solid #e7e6e6;\n  padding-bottom: 25px;\n  margin-bottom: 25px;\n}\n\n.blog-comment .comment-list .children {\n  padding-left: 40px;\n}\n\n.blog-comment .avatar {\n  float: left;\n  margin-right: 15px;\n  padding: 5px;\n  border-radius: 3px;\n  background: #ffffff;\n  border: 1px dashed #346AFE;\n}\n\n.blog-comment .comment-author {\n  margin-bottom: 10px;\n}\n\n.blog-comment .meta {\n  margin-bottom: 10px;\n  color: #999;\n}\n\n.post-meta {\n  color: #fff;\n  margin-top: 15px;\n  margin-bottom: 15px;\n}\n\n.post-meta ul li {\n  display: inline-block;\n  margin-right: 8px;\n  margin-left: 8px;\n}\n\n.post-meta ul li i {\n  margin-right: 5px;\n}\n\n.post-meta ul li a {\n  color: #fff;\n}\n\n.post-meta ul li a:hover {\n  color: #009BFE;\n}\n\n\/* ==========================================================================\n   Contact Us\n  ========================================================================== *\/\n.form-control {\n  width: 100%;\n  margin-bottom: 20px;\n  padding: 15px 30px;\n  font-size: 14px;\n  border-radius: 30px;\n  border: 1px solid transparent;\n  background: #f5f5f5;\n  -webkit-transition: all 0.3s;\n  -moz-transition: all 0.3s;\n  transition: all 0.3s;\n}\n\n.form-control:focus {\n  border: 1px solid #009BFE;\n  outline: none;\n  box-shadow: none;\n}\n\n.btn.disabled, .btn:disabled {\n  opacity: 1;\n}\n\ntextarea {\n  border-radius: 4px !important;\n}\n\n.contact-info {\n  margin-bottom: 15px;\n}\n\n.contact-info i {\n  font-size: 20px;\n  color: #009BFE;\n}\n\n.contact-info h5 {\n  margin-top: 5px;\n  font-size: 18px;\n  font-weight: 500;\n}\n\n.contact-info p {\n  font-size: 14px;\n  margin-bottom: 0;\n}\n\n#contact {\n  background: #ffffff;\n  position: relative;\n  overflow: hidden;\n}\n\n#contact .contact-block {\n  overflow: hidden;\n}\n\n.text-danger {\n  font-size: 14px;\n  margin-top: 10px;\n}\n\n.list-unstyled li {\n  color: #d9534f;\n}\n\n\/* Contact Map *\/\n#conatiner-map {\n  width: 100%;\n  height: 480px;\n}\n\n#google-map-area {\n  position: relative;\n}\n\n#google-map-area .container-fluid {\n  padding-left: 0;\n  padding-right: 0;\n}\n\n.toggle-map {\n  height: 5px;\n  width: 100%;\n  background-color: #009BFE;\n  bottom: 0px;\n  text-align: center;\n  position: absolute;\n  z-index: 106;\n}\n\n.toggle-map .map-icon {\n  width: 50px;\n  height: 50px;\n  display: inline-block;\n  -moz-border-radius: 100%;\n  -webkit-border-radius: 100%;\n  border-radius: 100%;\n  background-color: #fff;\n  border: #009BFE 3px solid;\n  position: relative;\n  top: -46px;\n}\n\n.toggle-map .map-icon i {\n  width: 44px;\n  height: 44px;\n  display: inline-block;\n  line-height: 44px;\n  text-align: center;\n  font-size: 20px;\n}\n\n#google-map {\n  text-align: center;\n  background-color: #fff;\n  height: 465px;\n  position: absolute;\n  bottom: -460px;\n  -webkit-transition: all 0.3s;\n  -moz-transition: all 0.3s;\n  transition: all 0.3s;\n  z-index: 101;\n  width: 100%;\n  border-top: #009BFE 3px solid;\n}\n\n#google-map.panel-show {\n  bottom: -20px !important;\n  -webkit-transition: all 0.3s;\n  -moz-transition: all 0.3s;\n  transition: all 0.3s;\n}\n\n\/* ==========================================================================\n  19. Subscribe Style\n  ========================================================================== *\/\n#subscribe {\n  background: url(..\/img\/bg\/bg-subs.jpg);\n  position: relative;\n}\n\n.subscribe-form .sub-title {\n  margin-bottom: 30px;\n}\n\n.subscribe-form .sub-title h3 {\n  font-size: 30px;\n  margin-bottom: 10px;\n  position: relative;\n  font-weight: 500;\n}\n\n.subscribe-form .form-wrapper {\n  background-color: #ffffff;\n  padding: 58px 40px;\n  border-radius: 4px;\n  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);\n}\n\n.subscribe-form .form-wrapper .form-group {\n  margin-bottom: 0px;\n}\n\n.subscribe-form .form-wrapper .form-control {\n  display: block;\n  width: 100%;\n  font-size: 14px;\n  box-shadow: none;\n  color: #848484;\n  text-transform: capitalize;\n  background: #f7f7f7;\n  border: 1px solid transparent;\n  padding: 15px 30px;\n  border-radius: 30px;\n  background-image: none;\n  background-clip: padding-box;\n}\n\n.subscribe-form .form-wrapper .form-control:focus {\n  color: #212121;\n  background-color: #fff;\n  border-color: #009BFE;\n  box-shadow: none;\n  outline: 0;\n}\n\n.subscribe-form .form-submit .btn {\n  width: 100%;\n  padding: 13px 30px;\n}\n\n#subscribe .sub-item-box {\n  padding: 30px;\n  margin-bottom: 30px;\n  border-radius: 4px;\n  background: #fff;\n}\n\n#subscribe .sub-item-box .icon-box {\n  float: left;\n}\n\n#subscribe .sub-item-box .icon-box i {\n  font-size: 30px;\n  color: #009BFE;\n}\n\n#subscribe .sub-item-box .text-box {\n  margin-left: 60px;\n}\n\n#subscribe .sub-item-box .text-box h4 {\n  font-size: 16px;\n  font-weight: 500;\n}\n\n#subscribe .sub-item-box .text-box p {\n  margin-bottom: 0;\n}\n\n#subscribe .sub-item-box:last-child {\n  margin-bottom: 0;\n}\n\n\/* ==========================================================================\n   Footer Style\n   ========================================================================== *\/\n.block-title {\n  font-size: 15px;\n  font-weight: 700;\n  color: #263238;\n  margin-bottom: 30px;\n  text-transform: uppercase;\n  position: relative;\n}\n\nfooter .footer-Content {\n  background-color: #ffffff;\n  padding: 60px 0;\n  color: #546E7A;\n}\n\n.textwidget {\n  font-size: 14px;\n  line-height: 24px;\n  margin-bottom: 10px;\n}\n\n.textwidget p {\n  color: #546E7A;\n}\n\nfooter .menu {\n  padding-left: 0;\n}\n\nfooter .menu li {\n  padding-bottom: 12px;\n}\n\nfooter .menu li a {\n  color: #000;\n}\n\nfooter .menu li a:hover {\n  color: #009BFE;\n}\n\n.contact-footer {\n  margin: 0;\n  padding: 0;\n  display: inline-block;\n}\n\n.contact-footer li {\n  padding: 3px 0;\n  margin-bottom: 15px;\n}\n\n.contact-footer li strong {\n  float: left;\n}\n\n.contact-footer li span {\n  margin-left: 73px;\n  display: block;\n}\n\n.contact-footer li span a {\n  color: #546E7A;\n}\n\n.contact-footer li span a:hover {\n  color: #009BFE;\n}\n\n.instagram-footer {\n  padding: 0;\n}\n\n.instagram-footer li {\n  display: block;\n  width: 33%;\n  float: left;\n  padding: 0 5px 5px 0;\n  margin: 0;\n}\n\n.instagram-footer li a img {\n  width: 100%;\n}\n\n.footer-social li {\n  display: inline-block;\n  margin-right: 12px;\n}\n\n.footer-social li a {\n  background-color: #009BFE;\n  border-radius: 50%;\n  color: #fff;\n  height: 32px;\n  line-height: 32px;\n  text-align: center;\n  width: 32px;\n  display: inline-block;\n  -webkit-transition: all .4s ease-in-out;\n  -moz-transition: all .4s ease-in-out;\n  transition: all .4s ease-in-out;\n}\n\n.footer-social li .facebook:hover {\n  background-color: #3b5998;\n}\n\n.footer-social li .twitter:hover {\n  background-color: #55acee;\n}\n\n.footer-social li .linkedin:hover {\n  background-color: #007bb5;\n}\n\n.footer-social li .google-plus:hover {\n  background-color: #dd4b39;\n}\n\n#copyright {\n  background-color: #ffffff;\n  padding: 20px 0 10px;\n  border-top: 1px solid #eaeaea;\n  color: #546E7A;\n}\n\n#copyright p {\n  margin-bottom: 0;\n  line-height: 40px;\n}\n\n#copyright p a {\n  color: #000;\n}\n\n#copyright p a:hover {\n  color: #009BFE;\n}\n\n#copyright .nav-inline .nav-link {\n  color: #546E7A;\n  padding: 10px 0;\n  margin-left: 10px;\n}\n\n#copyright .nav-inline .nav-link:hover {\n  color: #009BFE;\n}\n\n\/* ==========================================================================\n Counter Section Style\n ========================================================================== *\/\n.counters {\n  background: url(..\/img\/bg\/bg-counter.jpg) fixed;\n  position: relative;\n}\n\n.counters .facts-item {\n  text-align: center;\n  color: #fff;\n  border: 1px dotted #fff;\n  border-radius: 4px;\n  padding: 30px;\n}\n\n.counters .facts-item .icon {\n  margin-bottom: 15px;\n}\n\n.counters .facts-item .icon i {\n  font-size: 40px;\n  color: #fff;\n}\n\n.counters .facts-item .fact-count h3 {\n  font-size: 40px;\n  color: #fff;\n  font-weight: 400;\n  line-height: 40px;\n}\n\n.counters .facts-item .fact-count h4 {\n  font-size: 15px;\n  color: #fff;\n  margin-bottom: 0;\n}\n\n.counter-item {\n  text-align: center;\n  padding: 30px;\n  background: #f9f9f9;\n  border: 1px solid #eaeaea;\n  margin: 15px 0;\n}\n\n.counter-item .icon {\n  margin-bottom: 20px;\n}\n\n.counter-item .icon i {\n  font-size: 40px;\n  color: #009BFE;\n}\n\n.counter-item .fact-count h3 {\n  font-size: 50px;\n  font-weight: 500;\n  line-height: 60px;\n}\n\n.counter-item .fact-count h4 {\n  font-size: 18px;\n  margin-bottom: 0;\n}\n.und {\n  text-decoration: underline;\n}\n.blue {\n  color: #155ADD;\n  font-weight: bold;\n}\n.und {\n  text-decoration: underline;\n}\n.ptxt{\n  font-size: 26px;\n  color: #000;\n  line-height: 36px;\n}\n.fontfam2{\n  font-family: assistant-semibold,sans-serif;\n}\n.date {\n  padding: 45px 0 25px;\n}\n\n.date {\n  text-decoration: underline;\n}\n.text-left {\n  text-align: left!important;\n}\n.date h5 {\n  color: #7E5959;\n  font-size: 18px;\n}\n.text-left {\n  text-align: left!important;\n}\n.date p {\n  font-size: 26px;\n  font-family: assistant-semibold,sans-serif;\n}\np{\n  font-family: assistant-semibold,sans-serif;\n}\n.lif {\n  color: #9C3C1F;\n  font-weight: 800;\n}\n.tag p {\n  float: left;\n  font-size: 25px;\n  background-color: gray;\n  padding: 4px 7px;\n  border-right: 16px solid #ffff;\n  color: #fff;\n  font-weight: bold;\n  line-height: 31px;\n  margin-bottom: 14px;\n}\n.red {\n  background-color: #F41328 !important;\n}\n.slider_bottom{\n  margin: auto;\n  text-align: center;\n}\n.slider_bottom img{\n  width: 75%;\n    margin-top: 43px;\n    margin-left: auto;\n    margin-right: auto;\n    text-align: center;\n    align-items: center;\n    vertical-align: middle;\n}\n.bdtop_btom {\n  margin: 0 auto;\n}\n\n.bdtop_btom {\n  border-top: 1px solid #000000;\n  border-bottom: 1px solid #000000;\n  padding: 10px 0;\n  margin: 10px 0px;\n}\n.bringal {\n  color: #0A3C93;\n  font-weight: bold;\n  font-size: 20px;\n}\n.share {\n  color: #000000;\n  font-weight: bold;\n  font-size: 18px;\n  margin-right: 10px;\n  \n}\n.bdtop_btom .row{\n  align-items: center;\n}\n.newflex{\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n}\n.conttent_bottom {\n  margin: 0 auto;\n  border-bottom: 5px solid #7F25E3;\n  padding-bottom: 20px;\n}\n.conttent_bottom p {\n  padding: 2px 0;\n  font-size: 18px;\n  color: #000;\n  text-align: justify;\n}\n.blck {\n  color: #000000;\n  font-weight: 900;\n}\n.headerimgs{\ntext-align: center;\nmargin-bottom: 40px;\n}\n.headerimgs img{\n  width: 100%;\n  max-width: 60%;\n}\n.headerimgs img:first-child{\n  margin-bottom: 25px;\n}\n.mainbdy{\n  margin-bottom: 40px;\n}\n.mainbdy img{\n  width: 100%;\n}\n.mainbdy p{\n  font-size: 20px;\n  color: #000;\n}\n.bulllet_ano img{\n  width: 20px;\n}\n.bulllet_ano{\nlist-style: none;\n}\n.bulllet_ano li\n{\n  font-size: 18px;\n  color: #000;\n  font-family: assistant-semibold,sans-serif;\n}\n.newpart2\n{\ntext-align: center;\n}\n.newbullt2 {\n  width: 100%;\n    max-width: 65%;\n    margin: auto;\n}\n.newpart2 img{\n  width: 100%;\n  max-width: 65%;\n  margin: 20px 0;\n}\n.newbullt2 img{\n  width: 70px;\n}\n.newpart3 {\n  width: 100%;\n  max-width: 65%;\n  margin: auto;\n}\n.trimg{\n  width: 226px !important;\n    margin: auto;\n    text-align: center;\n    display: block;\n    margin-top: 20px;\n\n}\n.Rdd {\n  color: #890503;\n  font-weight: 900;\n}\n.conttent_malt li {\n  padding: 20px 0;\n}\n.blc {\n  color: black;\n  font-weight: 100;\n}\n.newpart4{\n  text-align: center;\n  margin-bottom: 30px;\n}\n.newpart4 img{\n  width: 100%;\n  max-width: 35%;\n  margin: 20px 0;\n}\n.revewimg{\n  width: 98px !important;\n}\n.Rdd {\n  color: #890503 !important;\n  font-weight: 900;\n}\n.newrev .col-md-6{\n  padding: 20px 50px;\n} \n.newfontsize h3{\nfont-size: 23px !important;\n}\n.newfontsize p{\n  font-size: 18px !important;\n}\n.imgcbd1{\n  max-width: 300px;\n  text-align: center;\n  display: block;\n  margin: auto;\n  margin-top: 30px;\n  margin-bottom: 10px;\n}\n.iconcbdimg img{\nmax-width: 100px;\n}\n.iconcbdimg h4{\ncolor: #10995E !important;\nfont-weight: bold !important;\n}\n.iconcbdimg p{\nfont-weight: 100 !important;\n}\n.iconcbd2{\n  margin-top: 50px;\n}\n.iconcbd2 h4{\n  color: #1A3E4C !important;\n  }\n  .transformrev h2{\n    font-weight: 700;\n    padding: 15px 0 0;\n    font-size: 17px;\n  }\n  .newrev p{\n    font-size: 17px;\n  }\n  .view_last h2 span {\n    color: #81A78D !important;\n}\n.rad{\n  color: #EC140F !important;\n}\n.bgaplha {\n  background: url(..\/images\/alpha\\ background.webp);\n}\n.bb {\n  color: #2BC5E2;\n}\n.newpart5 {\n  width: 100%;\n  max-width: 80%;\n  margin: auto;\n}\n.sexul {\n\n}\n.sexul ul{\ncolor: #000;\nfont-size: 16px;\n}\n.mr2 {\n  margin: 30px 0;\n}\n.newrevreal img:first-child{\n  height: 200px;\n  width: auto !important;\n}\n.color2 {\n  color: #541898;\n}\n.gray {\n  color: #595959;\n  \n}\n.blu {\n  color: #0A3C93;\n}\n.imgicon1 img{\n  width: 60px !important;\n}\n\n.bulllet_ano2 img {\n  width: 40px !important;\n  margin-right: 6px !important;\n}\n.newrevx img:first-child{\n  height: 300px;\n  width: auto !important;\n}\n.gg {\n  color: #4A83B2;\n  \n  font-weight: bold;\n}\n.headerflex{\ndisplay: flex;\nalign-items: center;\njustify-content: space-between;\nwidth: 100%;\npadding: 16px 0;\n}\n.headerflex h2{\n  color: #595959;\n  font-size: 20px;\n}\n.headerflex .col-md-9{\ntext-align: right;\n}\n.headerflex .col-md-3{\n  max-width: 200px;\n  }\n  .mr3{\n    margin: 60px 0;\n  }\n  h4{\n    font-size: 20px;\n  }\n  .braintxt {\n\n  }\n  .braintxt h2{\nfont-size: 20px;\n  }\n  .braintxt p{\nfont-size: 16px;\nfont-weight: 100px !important;\n  }\n  .pd1{\n    padding: 80px 0px;\n  }\n  .coltxtcol1 .item-boxes h4{\ncolor: #009bfe !important;\n  }\n  .coltxtcol1 .item-boxes{\n    border: 1px solid #009bfe82 !important;\n  }\n  .coltxtcol2 .item-boxes h4{\n    color: #890503 !important\n      }\n      .coltxtcol2 .item-boxes{\n        border: 1px solid #89050373 !important\n      }\n      .green{\n        color: green;\n      }\n      .coltxtcol3 .item-boxes h4{\n        color: #EC140F !important;\n          }\n          .coltxtcol3 .item-boxes{\n            border: 1px solid #ec140f80 !important\n          }\n          .coltxtcol4 .item-boxes h4{\n            color: #541898 !important;\n              }\n              .coltxtcol4 .item-boxes{\n                border: 1px solid #541898 !important\n              }\n              .coltxtcol5 .item-boxes h2{\n                color: #2BC5E2 !important;\n                  }\n                  .coltxtcol5 .item-boxes{\n                    border: 1px solid #2BC5E2 !important\n                  }\n              .headertxtsec{\n                padding: 35px 0 0px;\n              }\n              .headertxtsec h2{\n                max-width: 800px;\n                \/* text-align: center; *\/\n                \/* margin: auto; *\/\n                padding: 0px 70px;\n              }   \n              @media(min-width:600px){\n                .newtxtcust{\n                  padding: 0 70px;\n                }\n              }";
+        
+        var fileName = "main.css";
+        var editAreaEl = "";
+        var lastResizeTime = 0;
+        var lastResizeRequestTime = 0;
+        var NVData = {"editor_fontsize":"","editor_nowrap":""};
+
+        function load_EditArea(workingContent) {
+            workingContent = workingContent;
+            if(USE_LEGACY_EDITOR){
+                showAceEditorElements(false);
+
+                editAreaEl = 'legacy_codewindow';
+                CODEWINDOW = DOM.get(editAreaEl);
+                editAreaLoader.show(editAreaEl);
+                loadLegacyEditor(editAreaEl, workingContent);
+            } else {
+                editAreaLoader.hide(editAreaEl);
+
+                editAreaEl = 'codewindow';
+                CODEWINDOW = DOM.get(editAreaEl);
+                showAceEditorElements(true);
+                loadAceEditor(editAreaEl, workingContent);
+            }
+        }
+
+        function showAceEditorElements(show){
+            if(show){
+                $(".show-ace-editor").show();
+            } else {
+                $(".show-ace-editor").hide();
+            }
+        }
+
+        function loadLegacyEditor(editAreaId, editContent){
+            // Setting up the ids in js/edit_area_resizer.js file to
+            // use it for resizing purposes.
+            setElementIds(editAreaId);
+            var EditArea_config = {
+                id: editAreaEl,
+                start_highlight: true,
+                allow_resize: "both",
+                allow_toggle: false,
+                language: "en",
+                toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, |, change_smooth_selection, highlight, reset_highlight, word_wrap, |, help",
+                syntax: "css",
+                word_wrap: true
+            };
+            editAreaLoader.setValue(editAreaId, editContent);
+
+            editAreaLoader.init(EditArea_config);
+            doResizeSoon();
+        }
+
+        function loadAceEditor(editAreaEl, editContent){
+            ace_editor = ace.edit(editAreaEl);
+            // The line below is added to disable a
+            // warning message as required by ace editor
+            // script.
+            ace_editor.$blockScrolling = Infinity;
+            ace_editor.focus();
+
+            var editSession = ace.createEditSession(editContent);
+            ace_editor.setSession(editSession);
+            if(typeof(editSession) !== "undefined"){
+                var defaultFontSize = parseInt(NVData.editor_fontsize, 10) || 13;
+                // Load the modelist extension to identify the file
+                // type of the given file and open the file in that
+                // editor mode.
+                var modelist = ace.require("ace/ext/modelist");
+                var modeObj = modelist.getModeForPath(fileName);
+
+                ace_editor.setOptions({
+                    "fontSize": defaultFontSize,
+                    "mode": modeObj.mode,
+                    "theme": "ace/theme/chrome"
+                });
+                updateWordWrapInterface();
+
+                // Fill mode list dropdown in the toolbar.
+                var $modeEl = $('#ddlModes');
+                fillModesDropdown($modeEl, modelist);
+                $modeEl.val(modeObj.name);
+                // Bind change event.
+                $modeEl.change(function(){
+                    var selectedMode = $modeEl.find( "option:selected" ).first().val();
+                    ace_editor.getSession().setMode(modelist.modesByName[selectedMode].mode);
+                });
+
+                // Fill font size dropdown.
+                var $fontEl = $('#ddlFontSizes');
+                fillFontsDropdown($fontEl);
+                $fontEl.val(defaultFontSize);
+                // Bind change event.
+                $fontEl.change(function(){
+                    var selectedSize = parseInt($fontEl.find( "option:selected" ).first().val());
+                    SetNvData("editor_fontsize", selectedSize);
+                    ace_editor.setFontSize(selectedSize);
+                });
+            }
+        }
+
+        function fillFontsDropdown($el) {
+            var arr = [10, 11, 12, 13, 14, 16, 18, 20, 24].map(function(size){
+                return {val: size, text: size + "px"};
+            });
+            arr.forEach(function(val){
+                $el.append($("<option>", val));
+            });
+        }
+
+        function fillModesDropdown($el, modeList) {
+            var arr = modeList.modes.map(function(oMode){
+                return {val: oMode.name, text: oMode.caption};
+            });
+            arr.forEach(function(val){
+                $el.append($("<option>", val));
+            });
+        }
+
+        function toolbarActions(action){
+            switch(action){
+                case "search":
+                ace_editor.execCommand("find");
+                break;
+                case "goto":
+                ace_editor.execCommand("gotoline");
+                break;
+                case "undo":
+                ace_editor.undo();
+                break;
+                case "redo":
+                ace_editor.redo();
+                break;
+                case "linewrap":
+                toggleWordWrap();
+                break;
+            }
+        }
+
+        function toggleWordWrap() {
+            if (NVData.editor_nowrap) {
+                SetNvData("editor_nowrap", 0);
+            } else {
+                SetNvData("editor_nowrap", 1);
+            }
+            updateWordWrapInterface();
+        }
+
+        function updateWordWrapInterface() {
+            var btnEl = document.querySelector("#btnLineWrap");
+
+            if (btnEl && NVData.editor_nowrap) {
+                ace_editor.setOption("wrap", false);
+                btnEl.classList.remove("active");
+            } else {
+                ace_editor.setOption("wrap", 80);
+                btnEl.classList.add("active");
+            }
+            // Remove the focus button state for less UI confusion
+            btnEl.blur();
+        }
+
+        /*
+         * This function detects if the browser is in a mobile
+         * environment.
+         * Note: This is used to open the editor in legacy editor mode
+         * until Ace editor comes with the fixes for issues described in
+         * ZC-2558.
+        */
+        function detectmobile() {
+         if( navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)
+         ){
+            return true;
+          }
+         else {
+            return false;
+          }
+        }
+
+        function toggle_EditArea(link) {
+            var workingContent = "";
+            if(USE_LEGACY_EDITOR){
+                USE_LEGACY_EDITOR = false;
+                // send working content to not loose working data
+                // when user switches between two editors.
+                workingContent = (editAreaLoader) ? editAreaLoader.getValue(editAreaEl) : "";
+            } else {
+                USE_LEGACY_EDITOR = true;
+                // Reset the word wrap
+                toggleWordWrap();
+                // send working content to not loose working data
+                // when user switches between two editors.
+                workingContent = (ace_editor) ? ace_editor.getSession().getValue() : "";
+            }
+            toggleSwitchButtonAttr(link);
+            load_EditArea(workingContent);
+        }
+
+        function toggleSwitchButtonAttr(btnEl) {
+            var $switchButton = $(btnEl);
+            if(USE_LEGACY_EDITOR){
+                $switchButton.text("Use latest editor").prop("title", "Switch to latest editor.");
+            } else {
+                $switchButton.text("Use legacy editor").prop("title", "Switch to legacy editor.");
+            }
+        }
+
+        var CODEWINDOW;
+        var ace_editor;
+
+        EVENT.throwErrors = true;
+
+        YAHOO.util.Event.addListener(window, "load", function(){
+            savedContent = file_content;
+            if(detectmobile()){
+                USE_LEGACY_EDITOR = true;
+            }
+            toggleSwitchButtonAttr(DOM.get("switch_editor_control"));
+            load_EditArea(savedContent);
+        });
+        $(window).resize(function(e) {
+            doResize();
+        });
+        </script>
+
+    
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
